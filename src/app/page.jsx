@@ -18,7 +18,8 @@ import technologyData from '../../public/data/technology.json';
 
 export default function Home() {
   return (
-    <div>
+    <div> 
+
     <HeroSection data={[businessData[0],politicsData[0],sportsData[0]]}/>
     <PressviewHero />
     <PostGrid data={[politicsData[1],politicsData[2],politicsData[3],politicsData[4]]}/>

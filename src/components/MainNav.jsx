@@ -16,7 +16,7 @@ export default function MainNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#4a4a4a] border-t border-black">
+    <nav className="fixed top-[50px] left-0 w-full bg-[#4a4a4a] border-t border-black">
       {/* MAIN WRAPPER */}
       <div className="max-w-[1891px] mx-auto px-30 py-1 flex items-center justify-between">
 

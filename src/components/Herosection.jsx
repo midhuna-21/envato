@@ -9,10 +9,10 @@ export default function HeroSection({ data }) {
     setCurrent((prev) => (prev + 1) % data.length);
   };
 
-  const currentSlide = data[current]; // active slide data
+  const currentSlide = data[current];
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[500px] overflow-hidden">
       {/* Background Slides */}
       {data?.map((item, index) => (
         <div
@@ -31,31 +31,20 @@ export default function HeroSection({ data }) {
 
       {/* Center Content */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-black/40 backdrop-blur-md px-10 py-16 md:px-16 md:py-24 
-                        text-center max-w-2xl mx-auto text-white rounded-lg">
+        <div className="
+      bg-[#C1C0B4CC]/80 
+      h-full w-[75%] md:w-[35%]   /* Decreased width */
+      flex flex-col items-center justify-center 
+      text-center 
+  ">
 
-          {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl capitalize font-light tracking-wide mb-4">
+          <h1 className="text-4xl md:text-6xl text-[#2f2f2f] capitalize font-light tracking-wide mb-4">
             {currentSlide.category}
           </h1>
 
-          {/* SHORT DESCRIPTION */}
-          <p className="mt-4 md:text-lg opacity-90">
+          <p className="mt-2 opacity-90 text-[13px] font-semibold text-[#2f2f2f] font-serif">
             {currentSlide.title}
           </p>
-
-          {/* OPTIONAL LONG DESCRIPTION */}
-          {currentSlide.description && (
-            <p className="md:text-lg mt-2 opacity-90">
-              {currentSlide.shortdescription}
-            </p>
-          )}
-
-
-          <button className="mt-10 px-8 py-3 border border-white hover:bg-white hover:text-black transition rounded-md text-lg">
-            read more
-          </button>
-
           {/* Close icon / Next slide */}
           <div
             className="mt-6 cursor-pointer text-white text-xl"
@@ -64,12 +53,31 @@ export default function HeroSection({ data }) {
             ✕
           </div>
 
+
+          <button class="relative group px-5 py-2 font-bold text-gray-200
+                bg-[#2f2f2f] border-[4px] border-[#2f2f2f] hover:bg-white hover:border-white
+                transition-all duration-300">
+
+            <span class="absolute inset-0 border-[2px] border-white hover:border-[#2f2f2f]
+               pointer-events-none group-hover:border-[#2f2f2f]">
+            </span>
+
+            <span class="relative group-hover:text-[#2f2f2f]">
+              read more
+            </span>
+
+          </button>
+
+
+
+
           {/* Slider Dots */}
           <div className="flex justify-center mt-6 space-x-4">
             {data.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
+
                 className={`w-4 h-4 border border-white rotate-45 transition ${current === i ? "bg-white" : "bg-transparent"
                   }`}
               ></button>
@@ -77,6 +85,7 @@ export default function HeroSection({ data }) {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
