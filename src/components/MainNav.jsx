@@ -16,11 +16,8 @@ export default function MainNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-[50px] left-0 w-full bg-[#4a4a4a] border-t border-black">
-      {/* MAIN WRAPPER */}
+    <nav className="fixed top-[50px] left-0 w-full bg-[#4a4a4a] border-t border-black z-[9998]">
       <div className="max-w-[1891px] mx-auto px-30 py-1 flex items-center justify-between">
-
-        {/* LEFT MENU (DESKTOP) */}
         <ul className="hidden md:flex items-center text-[#C1C0B4] text-[13px] tracking-wide gap-4 font-serif">
           <li className="hover:text-white transition">Home</li>
           <li>*</li>

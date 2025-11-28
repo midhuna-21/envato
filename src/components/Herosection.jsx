@@ -13,7 +13,7 @@ export default function HeroSection({ data }) {
 
   return (
     <div className="relative w-full h-[500px] overflow-hidden">
-      {/* Background Slides */}
+
       {data?.map((item, index) => (
         <div
           key={item.slug || index}
@@ -29,63 +29,70 @@ export default function HeroSection({ data }) {
         </div>
       ))}
 
-      {/* Center Content */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="
-      bg-[#C1C0B4CC]/80 
-      h-full w-[75%] md:w-[35%]   /* Decreased width */
-      flex flex-col items-center justify-center 
-      text-center 
-  ">
+      <div className="absolute inset-0 flex items-center justify-center z-10">
+        <div
+          className="
+    bg-[#c1c0b4]/80
+    h-full w-[75%] md:w-[35%]
+    flex flex-col items-center 
+    text-center
+    pt-30 pb-0
+    p-10
+  "
+        >
 
-          <h1 className="text-4xl md:text-6xl text-[#2f2f2f] capitalize font-light tracking-wide mb-4">
+          {/* CATEGORY */}
+          <h1 className="text-4xl md:text-6xl text-[#2f2f2f] capitalize font-light tracking-wide mb-5">
             {currentSlide.category}
           </h1>
 
-          <p className="mt-2 opacity-90 text-[13px] font-semibold text-[#2f2f2f] font-serif">
+          {/* LINE */}
+          <svg
+            width="100%"
+            height="6"
+            viewBox="0 0 48 6"
+            className="mx-auto max-w-[280px] mb-10"
+            fill="none"
+            stroke="#e6e6e1"
+            strokeWidth="2"
+          >
+            <path d="M0 3 L3 0 L6 6 L9 0 L12 6 L15 0 L18 6 L21 0 L24 6 L27 0 L30 6 L33 0 L36 6 L39 0 L42 6 L45 0 L48 3" />
+          </svg>
+
+          {/* TITLE */}
+          <p className="opacity-90 text-[13px] font-semibold text-[#2f2f2f] font-serif mb-8">
             {currentSlide.title}
           </p>
-          {/* Close icon / Next slide */}
+
+          {/* X BUTTON */}
           <div
-            className="mt-6 cursor-pointer text-white text-xl"
+            className="cursor-pointer text-white text-2xl mb-8"
             onClick={nextSlide}
           >
             ✕
           </div>
 
-
-          <button class="relative group px-5 py-2 font-bold text-gray-200
-                bg-[#2f2f2f] border-[4px] border-[#2f2f2f] hover:bg-white hover:border-white
-                transition-all duration-300">
-
-            <span class="absolute inset-0 border-[2px] border-white hover:border-[#2f2f2f]
-               pointer-events-none group-hover:border-[#2f2f2f]">
-            </span>
-
-            <span class="relative group-hover:text-[#2f2f2f]">
+          {/* READ MORE BUTTON */}
+          <button className="relative group px-4 py-1 font-bold text-gray-200 bg-[#2f2f2f] border-[4px] border-[#2f2f2f] hover:bg-white hover:border-white transition-all duration-300 mb-10">
+            <span className="absolute inset-0 border-[2px] border-white group-hover:border-[#2f2f2f] pointer-events-none"></span>
+            <span className="relative group-hover:text-[#2f2f2f]">
               read more
             </span>
-
           </button>
 
-
-
-
-          {/* Slider Dots */}
-          <div className="flex justify-center mt-6 space-x-4">
+          {/* DOTS */}
+          <div className="flex justify-center space-x-4">
             {data.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-
-                className={`w-4 h-4 border border-white rotate-45 transition ${current === i ? "bg-white" : "bg-transparent"
+                className={`w-3 h-3 border border-white rotate-45 transition ${current === i ? "bg-white" : "bg-transparent"
                   }`}
               ></button>
             ))}
           </div>
         </div>
       </div>
-
     </div>
   );
 }
