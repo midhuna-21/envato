@@ -13,7 +13,6 @@ export default function PostGrid({ data }) {
         backgroundColor: "#e9e9e7",
       }}
     >
-
       {/* TOP DECORATIVE DIVIDER */}
       <div className="w-full flex items-center justify-center mb-6">
 

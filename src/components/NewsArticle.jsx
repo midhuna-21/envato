@@ -1,12 +1,12 @@
 import Image from "next/image";
+import { FaFacebookF, FaInstagram, FaRss, FaSkype, FaTwitter, FaUser } from "react-icons/fa";
 
-export default function NewsArticle( {article }) {
-  console.log(article,'article')
+export default function NewsArticle({ article }) {
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4">
+    <div className="max-w-3xl mx-auto">
       {/* IMAGE */}
-      <div className="relative w-full h-80 md:h-96 rounded-md overflow-hidden">
+      <div className="relative w-full h-80 md:h-150 overflow-hidden">
         <Image
           src={article.image}
           alt={article.title}
@@ -17,48 +17,39 @@ export default function NewsArticle( {article }) {
       </div>
 
       {/* Title */}
-      <h1 className="text-2xl md:text-3xl font-semibold mt-6 leading-snug">
+      <h1 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal hover:underline max-w-[750px] mt-6 leading-snug">
         {article.title}
       </h1>
 
       {/* Meta */}
-      <div className="text-sm text-gray-600 mt-2 space-x-3 flex flex-wrap">
+      <div className="text-[#2f2f2f] mt-2 space-x-3 font-serif text-[12px] flex flex-wrap justify-center items-center">
+
+        {/* USER ICON */}
+        <FaUser className="text-[#333] text-[14px]" />
+
         <span>By {article.author}</span>
-        <span>•</span>
+        <span className="text-[#ccc]">|</span>
         <span>{article.date}</span>
-        <span>•</span>
       </div>
 
       {/* Content */}
-      <div className="mt-6 space-y-5 text-gray-800 leading-relaxed">
-        <p>{article.shortdescription}</p>
+      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[13px] font-serif leading-relaxed ">
         <p>{article.description}</p>
       </div>
 
       {/* Share Section */}
-      <div className="mt-10 flex flex-col md:flex-row md:items-center md:justify-between">
-        <span className="font-semibold tracking-wide uppercase text-gray-700 mb-3 md:mb-0">
-          Share on:
-        </span>
-
-        <div className="flex items-center space-x-3 text-xl">
-          <a href="#" className="hover:text-blue-500">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="hover:text-blue-400">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="hover:text-red-500">
-            <i className="fab fa-pinterest"></i>
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="hover:text-blue-600">
-            <i className="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
+  <div className="flex items-center justify-between  pt-0.5 border-t border-[#2f2f2f] border-b mt-10 pb-2 pt-2">
+ 
+             <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
+               <span className="font-normal font-serif">SHARE ON:</span>
+               <FaTwitter className="cursor-pointer" />
+               <FaFacebookF className="cursor-pointer" />
+               <FaSkype className="cursor-pointer" />
+               <FaRss className="cursor-pointer" />
+               <FaInstagram className="cursor-pointer" />
+             </div>
+           </div>
+                   <div className="border  mt-0.5 mb-8"></div>
     </div>
   );
 }

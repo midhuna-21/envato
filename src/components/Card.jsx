@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ label, score, title, description }) => {
   return (
-    <div 
+    <div
       className="
         flex flex-col items-center text-center 
         max-w-xl w-full 
@@ -102,80 +102,76 @@ export default function ThreeCardsSection({ data }) {
       </div>
 
       {/* GRID */}
-    <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl">
 
-  <div className="border-r border-[#d2d2d2] px-8">
-    <Card
-      label={data[0].category}
-      score="6.83"
-      title={data[0].title}
-      description={data[0].shortdescription}
-    />
-  </div>
+        <div className="border-r border-[#d2d2d2] px-8">
+          <Card
+            label={data[0].category}
+            score="6.83"
+            title={data[0].title}
+            description={data[0].shortdescription}
+          />
+        </div>
 
-  <div className="border-r border-[#d2d2d2] px-8">
-    <Card
-      label={data[1].category}
-      score="7.21"
-      title={data[1].title}
-      description={data[1].shortdescription}
-    />
-  </div>
+        <div className="border-r border-[#d2d2d2] px-8">
+          <Card
+            label={data[1].category}
+            score="7.21"
+            title={data[1].title}
+            description={data[1].shortdescription}
+          />
+        </div>
 
-  <div className="px-8">
-    <Card
-      label={data[2].category}
-      score="9.05"
-      title={data[2].title}
-      description={data[2].shortdescription}
-    />
-  </div>
+        <div className="px-8">
+          <Card
+            label={data[2].category}
+            score="9.05"
+            title={data[2].title}
+            description={data[2].shortdescription}
+          />
+        </div>
 
-</div>
-
-
+      </div>
       {/* Bottom Navigation Diamonds */}
-<div className="flex items-center gap-3 mt-15">
+      <div className="flex items-center gap-3 mt-15">
 
-  {/* LEFT DIAMOND */}
-  <div className="relative w-8 h-8 flex items-center justify-center rotate-45">
+        {/* LEFT DIAMOND */}
+        <div className="relative w-8 h-8 flex items-center justify-center rotate-45">
 
-    {/* Outer Border */}
-    <div className="absolute inset-0 border-2 border-[#2f2f2f]" />
+          {/* Outer Border */}
+          <div className="absolute inset-0 border-2 border-[#2f2f2f]" />
 
-    {/* Inner Border */}
-    <div className="absolute inset-1 border border-[#d9d9d9]" />
+          {/* Inner Border */}
+          <div className="absolute inset-1 border border-[#d9d9d9]" />
 
-    {/* Black Fill */}
-    <div className="absolute inset-[3px] bg-[#2f2f2f]" />
+          {/* Black Fill */}
+          <div className="absolute inset-[3px] bg-[#2f2f2f]" />
 
-    {/* Arrow */}
-    <span className="absolute text-white text-xl -rotate-45 select-none">
-      ‹
-    </span>
-  </div>
+          {/* Arrow */}
+          <span className="absolute text-white text-xl -rotate-45 select-none">
+            ‹
+          </span>
+        </div>
 
-  {/* RIGHT DIAMOND */}
-  <div className="relative w-8 h-8 flex items-center justify-center rotate-45">
+        {/* RIGHT DIAMOND */}
+        <div className="relative w-8 h-8 flex items-center justify-center rotate-45">
 
-    {/* Outer Border */}
-    <div className="absolute inset-0 border-2 border-[#2f2f2f]" />
+          {/* Outer Border */}
+          <div className="absolute inset-0 border-2 border-[#2f2f2f]" />
 
-    {/* Inner Border */}
-    <div className="absolute inset-1 border border-[#d9d9d9]" />
+          {/* Inner Border */}
+          <div className="absolute inset-1 border border-[#d9d9d9]" />
 
-    {/* Black Fill */}
-    <div className="absolute inset-[3px] bg-[#2f2f2f]" />
+          {/* Black Fill */}
+          <div className="absolute inset-[3px] bg-[#2f2f2f]" />
 
-    {/* Arrow */}
-    <span className="absolute text-white text-xl -rotate-45 select-none">
-      ›
-    </span>
-  </div>
+          {/* Arrow */}
+          <span className="absolute text-white text-xl -rotate-45 select-none">
+            ›
+          </span>
+        </div>
 
-</div>
-
-
+      </div>
     </div>
   );
 }

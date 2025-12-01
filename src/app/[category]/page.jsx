@@ -10,6 +10,8 @@ import lifestyleData from "../../../public/data/lifestyle.json";
 
 import CategoryCard from "../../components/CategoryCard";
 import PaginatedGrid from "../../components/PaginatedGrid";
+import Breadcrumb from "../../components/BreadCrump";
+import SectionTitle from "../../components/SectionTitle";
 
 const allData = {
   business: businessData,
@@ -32,20 +34,23 @@ export async function generateStaticParams() {
 export default async function CategoryPage({ params }) {
   const resolvedParams = await params;
 
-  console.log(resolvedParams.category);  
+  console.log(resolvedParams.category);
 
   const category = resolvedParams.category;
   const data = allData[category];
 
   if (!data) return <div>Category not found</div>;
 
-  console.log(data,'data all list')
   return (
-    <div className="container py-10 space-y-10">
+    <>
+      <Breadcrumb />
+      <SectionTitle title={category} />
+      <div >
 
         <PaginatedGrid data={data} />
- 
-    </div>
+
+      </div>
+    </>
   );
 }
 

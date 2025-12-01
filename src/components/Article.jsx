@@ -1,6 +1,7 @@
 import AuthorsWidget from "./AuthorsWidget";
 import CategoriesWidget from "./CategoriesWidget";
 import CommentsSection from "./CommentSection";
+import DetailCommentSection from "./DetatilCommentSection";
 import NewsArticle from "./NewsArticle";
 import PostNavigation from "./PostNavigation";
 import ProfileCard from "./ProfileCard";
@@ -10,16 +11,16 @@ import SidebarComments from "./SidebarComments";
 
 export default function Article({ article, otherArticles }) {
   return (
-    <div className="container mx-auto py-10 px-4">
+    <div className="">
       {/* GRID: Left content + Sidebar */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         
         {/* LEFT CONTENT - Main 2/3 width */}
-        <div className="lg:col-span-2 space-y-10">
+        <div className="lg:col-span-2 space-y-7">
           <NewsArticle article={article} />
           <ProfileCard />
           <PostNavigation />
-          <CommentsSection />
+          <DetailCommentSection />
           <ReplyForm />
           <RelatedPostsSection otherArticles={otherArticles} />
         </div>

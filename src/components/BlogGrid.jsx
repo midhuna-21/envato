@@ -2,99 +2,73 @@ import React from "react";
 
 const BlogCard = ({ image, category, title, date, comments, description }) => {
   return (
-    <div className="w-full bg-white pb-12">
-      {/* IMAGE */}
-      <div className="w-full">
+    <div className="w-full">
+      <div className="relative w-full">
         <img
           src={image}
           alt={title}
-          className="w-full h-[320px] object-cover"
+          className="w-full h-[280px] object-cover"
         />
+        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 
+                        bg-[#2f2f2f] text-white text-sm tracking-wide 
+                        px-4 py-2 shadow-md border border-gray-300">
+          <span className="mx-1">♦</span>
+          {category}
+          <span className="mx-1">♦</span>
+        </div>
       </div>
-
-      {/* CATEGORY LABEL */}
-      <div className="flex justify-center -mt-6">
-        <span className="bg-black text-white px-6 py-2 text-sm tracking-widest font-semibold flex items-center gap-2">
-          ◆ {category} ◆
-        </span>
-      </div>
-
-      {/* TITLE */}
-      <h2 className="text-4xl text-center mt-6 mb-3 font-medium">
+      <h2 className="text-[32px] text-center mt-6 font-medium px-4 line-clamp-1">
         {title}
-      </h2>
-
-      {/* DATE + COMMENTS */}
-      <div className="flex items-center justify-center gap-4 text-gray-600 mb-6 text-sm">
+      </h2> 
+      <div className="flex items-center justify-center gap-4 text-[#3f3f3f]  mb-3 text-sm">
         <span className="font-semibold">{date}</span>
-        <span className="flex items-center gap-1">
-          ● {comments} Comments
-        </span>
       </div>
-
-      {/* DESCRIPTION */}
-      <p className="text-center text-gray-700 leading-relaxed px-6 mb-10">
+      <p className="text-center text-[#3f3f3f] leading-relaxed text-[13px] px-6 mb-5 font-serif line-clamp-3">
         {description}
       </p>
 
-      {/* READ MORE SECTION */}
-      <div className="w-full px-10">
-        <div className="border-t-[3px] border-gray-900 mb-1"></div>
+    {/* Read More Section */}
+<div className="w-full flex flex-col items-center">
+  <div className="w-full">
+    <div className="border-t-2 border-[#2f2f2f]" />
+    <div className="border-t border-[#2f2f2f] mt-0.5" />
+  </div>
 
-        <div className="relative flex items-center justify-center">
-          <div className="w-full border-t border-gray-400"></div>
-          <span className="absolute bg-white px-4 text-gray-800 font-medium text-lg">
-            Read More →
-          </span>
-        </div>
-      </div>
+  <div className="my-2 flex justify-center">
+    <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
+      Read More →
+    </span>
+  </div>
+
+  <div className="w-full">
+    <div className="border-t-2 border-[#2f2f2f]" />
+    <div className="border-t border-[#2f2f2f] mt-0.5" />
+  </div>
+</div>
+
     </div>
   );
 };
 
-export default function BlogGrid({data}) {
-
+export default function BlogGrid({ data }) {
   return (
-    <div className="w-full flex justify-center py-16 bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl px-4">
+    <div className="w-full flex justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 max-w-7xl w-full">
 
-        <BlogCard
-          image={data[0].image}
-          category={data[0].category}
-          title={data[0].title}
-          date={data[0].date}
-          comments="2"
-          description={data[0].shortdescription}
-        />
-
-        <BlogCard
-          image={data[1].image}
-          category={data[1].category}
-          title={data[1].title}
-          date={data[1].date}
-          comments="5"
-          description={data[1].shortdescription}
-        />
-
-        <BlogCard
-          image={data[2].image}
-          category={data[2].category}
-          title={data[2].title}
-          date={data[2].title}
-          comments="4"
-          description={data[2].shortdescription}
-        />
-
-        <BlogCard
-          image={data[3].image}
-          category={data[3].category}
-          title={data[3].title}
-          date={data[3].date}
-          comments="7"
-          description={data[3].shortdescription}
-        />
+        {data.slice(0, 4).map((item, index) => (
+          <BlogCard
+            key={index}
+            image={item.image}
+            category={item.category}
+            title={item.title}
+            date={item.date}
+            comments={item.comments || "0"}
+            description={item.shortdescription}
+          />
+        ))}
 
       </div>
     </div>
   );
 }
+

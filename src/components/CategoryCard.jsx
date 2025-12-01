@@ -13,60 +13,59 @@ import {
 
 export default function CategoryCard({ item }) {
   return (
-    <div className="max-w-xl mx-auto bg-white text-[#333] border-t border-black pt-4 pb-10">
-      <Link
-        href={`/${item.category}/${item.slug}`}
-        title={item.title}
-      >
-        <div className="w-full border border-[#d7d7d7]">
-          <Image
-            src={item.image}
-            alt={item.title || "Category Image"}
-            width={800}
-            height={500}
-            className="w-full h-auto object-cover"
-          />
+    <div className="max-w-xl mx-auto bg-white text-[#333] border-t-2 border-[#2f2f2f]">
+      <div className="border-t border-[#2f2f2f] mt-0.5" />
+      <div className="pt-4 pb-5 p-2">
+
+        <Link href={`/${item.category}/${item.slug}`} title={item.title}>
+          <div className="relative w-full h-[260px] border border-[#d7d7d7] overflow-hidden">
+            <Image
+              src={item.image}
+              alt={item.title || "Category Image"}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+        </Link>
+
+
+        <h2 className="text-[32px] font-light mt-2 mb-2 line-clamp-1 text-center">
+          {item.title}
+        </h2>
+
+        <div className="flex items-center justify-center gap-3 text-[12px] text-gray-600 mb-3 ">
+          <FaUser className="text-gray-600" />
+          <span>{item.author}</span>
+
+          <span className="mx-2">|</span>
+
+          <FaCalendarAlt className="text-gray-600" />
+          <span>{item.date}</span>
         </div>
-      </Link>
 
-      <h2 className="text-3xl font-light mt-6 mb-4">
-        {item.title}
-      </h2>
+        <p className="text-[13px] text-gray-700 leading-relaxed font-serif text-center px-2">
+          {item.shortdescription}
+        </p>
 
-      <div className="flex items-center justify-center gap-3 text-sm text-gray-600 mb-6">
-        <FaUser className="text-gray-600" />
-        <span>{item.author}</span>
 
-        <span className="mx-2">|</span>
-
-        <FaCalendarAlt className="text-gray-600" />
-        <span>{item.date}</span>
-
-        <span className="mx-2">|</span>
-
-        <FaComments className="text-gray-600" />
-        <span>{item.comments} Comments</span>
       </div>
+      <div className="flex items-center justify-between  pt-0.5 border-t border-[#2f2f2f] border-b ">
 
-      <p className="text-[15px] text-gray-700 leading-relaxed text-center px-2">
-        {item.shortdescription}
-      </p>
-
-      <div className="flex items-center justify-between mt-8 pt-4 border-t border-gray-300 px-2">
-
-        <div className="flex items-center gap-3 text-sm">
-          <span className="font-semibold">SHARE ON:</span>
-          <FaTwitter className="text-gray-600 hover:text-black cursor-pointer" />
-          <FaFacebookF className="text-gray-600 hover:text-black cursor-pointer" />
-          <FaSkype className="text-gray-600 hover:text-black cursor-pointer" />
-          <FaRss className="text-gray-600 hover:text-black cursor-pointer" />
-          <FaInstagram className="text-gray-600 hover:text-black cursor-pointer" />
+        <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
+          <span className="font-normal font-serif">SHARE ON:</span>
+          <FaTwitter className="cursor-pointer" />
+          <FaFacebookF className="cursor-pointer" />
+          <FaSkype className="cursor-pointer" />
+          <FaRss className="cursor-pointer" />
+          <FaInstagram className="cursor-pointer" />
         </div>
 
-        <button className="bg-[#333] text-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-black">
+        <button className="bg-[#333] text-white px-3 py-2 text-[14px] font-serif font-normal tracking-widest hover:bg-black">
           read more
         </button>
       </div>
+      <div className="border  mt-0.5 mb-8"></div>
     </div>
   );
 }
