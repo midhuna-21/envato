@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaRss, FaSkype, FaTwitter, FaUser } from "rea
 export default function NewsArticle({ article }) {
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="mx-auto">
       {/* IMAGE */}
       <div className="relative w-full h-80 md:h-150 overflow-hidden">
         <Image
@@ -17,7 +17,7 @@ export default function NewsArticle({ article }) {
       </div>
 
       {/* Title */}
-      <h1 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal hover:underline max-w-[750px] mt-6 leading-snug">
+      <h1 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal hover:underline max-w-[750px] mt-6 leading-[1.1] tracking-tight">
         {article.title}
       </h1>
 
@@ -33,23 +33,23 @@ export default function NewsArticle({ article }) {
       </div>
 
       {/* Content */}
-      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[13px] font-serif leading-relaxed ">
+      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[12px] md:text-[14px] font-serif leading-[1.3] tracking-tight ">
         <p>{article.description}</p>
       </div>
 
       {/* Share Section */}
-  <div className="flex items-center justify-between  pt-0.5 border-t border-[#2f2f2f] border-b mt-10 pb-2 pt-2">
- 
-             <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
-               <span className="font-normal font-serif">SHARE ON:</span>
-               <FaTwitter className="cursor-pointer" />
-               <FaFacebookF className="cursor-pointer" />
-               <FaSkype className="cursor-pointer" />
-               <FaRss className="cursor-pointer" />
-               <FaInstagram className="cursor-pointer" />
-             </div>
-           </div>
-                   <div className="border  mt-0.5 mb-8"></div>
+      <div className="flex items-center justify-between  pt-0.5 border-t border-[#2f2f2f] border-b mt-10 pb-2 pt-2">
+
+        <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
+          <span className="font-normal font-serif">SHARE ON:</span>
+          <FaTwitter className="cursor-pointer" />
+          <FaFacebookF className="cursor-pointer" />
+          <FaSkype className="cursor-pointer" />
+          <FaRss className="cursor-pointer" />
+          <FaInstagram className="cursor-pointer" />
+        </div>
+      </div>
+      <div className="border  mt-0.5 mb-8"></div>
     </div>
   );
 }

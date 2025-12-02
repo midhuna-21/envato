@@ -8,7 +8,9 @@ export default function SocialStats() {
   ];
 
   return (
-    <div className="w-full border border-gray-300 p-2">
+    <div className="w-full border border-gray-300 p-2" style={{
+          backgroundImage: "url('/images/widget.webp')",
+        }}>
       <div className="grid grid-cols-1 md:grid-cols-3 bg-[#2c2c2c] text-[#e5e5e5]">
         {stats.map((item, i) => (
           <div

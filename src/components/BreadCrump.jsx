@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Breadcrumb() {
   return (
-    <div className="w-full"  style={{
+    <div className="w-full" style={{
           backgroundImage: "url('/images/widget.webp')",
         }}>
       <div className="w-full border-t-4 border-[#2f2f2f]" />

@@ -9,14 +9,14 @@ export default function AuthorsSection() {
   ];
 
   return (
-   <div>
+    <div className="py-6" style={{ backgroundImage: "url('/images/widget.webp')" }}>
       {/* TITLE WITH SMALL DIAMONDS */}
-      <div className="flex items-center justify-center gap-2 mb-5 mt-3">
-        
+      <div className="flex items-center justify-center gap-2 mb-2" >
+
         {/* LEFT SMALL DIAMOND */}
         <div className="relative w-2 h-2 rotate-45 bg-[#2f2f2f]" />
 
-        <h2 className="text-center text-[28px] font-light">
+        <h2 className="text-center text-[32px]  font-light ">
           Our Authors
         </h2>
 
@@ -25,7 +25,7 @@ export default function AuthorsSection() {
       </div>
 
       {/* GRID IMAGES */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-0.5 px-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-0.5 px-4 max-w-4xl mx-auto">
         {authors.map((img, i) => (
           <img
             key={i}

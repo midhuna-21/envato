@@ -21,10 +21,10 @@ export default function ProfileCard() {
       {/* Top Inner Border */}
       <div className="border-t border-[#2f2f2f] mt-0.5 my-4"></div>
 
-      {/* Main Grid */}
-      <div className="grid grid-cols-[1fr_2fr] gap-0 bg-[#f3f3f3]">
+      {/* Main Grid — mobile: column, desktop: 2 columns */}
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-0 bg-[#f3f3f3]">
 
-        {/* Left Image */}
+        {/* Image */}
         <div className="w-full h-64 md:h-72">
           <img
             src="/images/author-02.jpg"
@@ -35,7 +35,7 @@ export default function ProfileCard() {
 
         {/* Right Side Content */}
         <div className="flex flex-col justify-center text-center p-6 md:p-8">
-          
+
           {/* Name */}
           <h2 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal mb-2 md:mb-3">
             Oliver Matthews
@@ -54,7 +54,7 @@ export default function ProfileCard() {
             ×
           </div>
 
-          {/* Social Icons (Diamond Style) */}
+          {/* Social Icons */}
           <div className="flex justify-center mt-3 space-x-3 md:space-x-4">
             {socialIcons.map((Icon, i) => (
               <div
@@ -71,7 +71,6 @@ export default function ProfileCard() {
       {/* Bottom Borders */}
       <div className="border-b border-[#2f2f2f] mt-4"></div>
       <div className="border-b-2 border-[#2f2f2f] mt-0.5"></div>
-
     </div>
   );
 }

@@ -17,34 +17,34 @@ const BlogCard = ({ image, category, title, date, comments, description }) => {
           <span className="mx-1">♦</span>
         </div>
       </div>
-      <h2 className="text-[32px] text-center mt-6 font-medium px-4 line-clamp-1">
+      <h2 className="text-[22px] md:text-[32px] leading-[1.1] tracking-tight text-center mt-6 mb-3 font-medium px-4 line-clamp-1">
         {title}
-      </h2> 
-      <div className="flex items-center justify-center gap-4 text-[#3f3f3f]  mb-3 text-sm">
+      </h2>
+      <div className="flex items-center justify-center gap-4 text-[#3f3f3f]  mb-3 text-[12px]">
         <span className="font-semibold">{date}</span>
       </div>
-      <p className="text-center text-[#3f3f3f] leading-relaxed text-[13px] px-6 mb-5 font-serif line-clamp-3">
+      <p className="text-center text-[#3f3f3f] text-[13px] leading-[1.3] tracking-tight px-6 mb-5 font-serif line-clamp-3">
         {description}
       </p>
 
-    {/* Read More Section */}
-<div className="w-full flex flex-col items-center">
-  <div className="w-full">
-    <div className="border-t-2 border-[#2f2f2f]" />
-    <div className="border-t border-[#2f2f2f] mt-0.5" />
-  </div>
+      {/* Read More Section */}
+      <div className="w-full flex flex-col items-center">
+        <div className="w-full">
+          <div className="border-t-2 border-[#2f2f2f]" />
+          <div className="border-t border-[#2f2f2f] mt-0.5" />
+        </div>
 
-  <div className="my-2 flex justify-center">
-    <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
-      Read More →
-    </span>
-  </div>
+        <div className="my-2 flex justify-center">
+          <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
+            Read More →
+          </span>
+        </div>
 
-  <div className="w-full">
-    <div className="border-t-2 border-[#2f2f2f]" />
-    <div className="border-t border-[#2f2f2f] mt-0.5" />
-  </div>
-</div>
+        <div className="w-full">
+          <div className="border-t-2 border-[#2f2f2f]" />
+          <div className="border-t border-[#2f2f2f] mt-0.5" />
+        </div>
+      </div>
 
     </div>
   );

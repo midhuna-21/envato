@@ -1,34 +1,38 @@
-export default function RelatedNewsCard({ image, category, title, date, comments }) {
+import Image from "next/image";
+import { FaUser, FaCalendarAlt } from "react-icons/fa";
+
+export default function RelatedNewsCard({ image, category, author, title, date, comments }) {
   return (
     <div className="text-center">
-      {/* Image Box */}
-      <div className="relative">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-64 object-cover"
-        />
+      <div className="pt-4 pb-5 p-2">
+        <div className="relative group mb-4 ">
+          <div className="relative w-full h-[250px] overflow-hidden border border-gray-200 shadow-sm">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-105 transition duration-300"
+            />
+          </div>
 
-        {/* Category Tag */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-          <span className="bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
-            ✦ {category.toUpperCase()} ✦
-          </span>
+          <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#2f2f2f] text-white text-sm tracking-wide px-3 py-1 shadow-md border border-gray-300">
+            <span className="mx-1">♦</span>
+            {category}
+            <span className="mx-1">♦</span>
+          </div>
+
         </div>
-      </div>
+        <h2 className="text-[22px] md:text-[32px] font-light mt-2 mb-2 line-clamp-1 md:line-clamp-2 text-center leading-[1.1] tracking-tight">
+          {title}
+        </h2>
+        <div className="flex items-center justify-center gap-3 text-[12px] text-gray-600 mb-3 ">
+          <FaUser className="text-gray-600" />
+          <span>{author}</span>
+          <span className="mx-2">|</span>
+          <FaCalendarAlt className="text-gray-600" />
+          <span>{date}</span>
+        </div>
 
-      {/* Title */}
-      <h3 className="mt-4 text-2xl font-medium leading-snug">
-        {title}
-      </h3>
-
-      {/* Date + Comments */}
-      <div className="mt-2 text-gray-700 text-sm flex items-center justify-center space-x-3">
-        <span>{date}</span>
-        <span className="flex items-center space-x-1">
-          <i className="fas fa-comment"></i>
-          <span>{comments} Comments</span>
-        </span>
       </div>
     </div>
   );

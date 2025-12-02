@@ -1,18 +1,18 @@
 export default function ReplyForm() {
   return (
-    <div className="w-full mt-10">
+    <div className="w-full border-t-2 border-b-2 border-[#2f2f2f]">
       {/* Top Border */}
-      <div className="border-t-4 border-gray-700 mb-6"></div>
+      <div className="border-t border-b border-[#2f2f2f] mt-0.5 mb-0.5 py-6">
 
       {/* Title */}
-      <h2 className="text-3xl font-semibold mb-6">Leave a reply</h2>
+      <h2 className="text-[32px] font-normal mb-3">Leave a reply</h2>
 
       {/* Form */}
       <form className="space-y-6">
         {/* Name + Email Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-semibold mb-1">
+            <label className="block text-[13px] font-serif mb-1">
               Name (required)
             </label>
             <input
@@ -22,7 +22,7 @@ export default function ReplyForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold mb-1">
+            <label className="block text-[13px] font-serif mb-1">
               E-mail (required)
             </label>
             <input
@@ -34,7 +34,7 @@ export default function ReplyForm() {
 
         {/* Comment */}
         <div>
-          <label className="block text-sm font-semibold mb-1">Comment</label>
+          <label className="block text-[13px] font-serif mb-1">Comment</label>
           <textarea
             rows="8"
             className="w-full border border-gray-300 px-3 py-2 focus:outline-none"
@@ -45,15 +45,13 @@ export default function ReplyForm() {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="bg-gray-800 text-white px-6 py-2 text-sm font-semibold"
+            className="bg-[#2f2f2f] text-[#c1c0b4] px-6 py-2 text-[13px] font-serif"
           >
             post comment
           </button>
         </div>
       </form>
-
-      {/* Bottom Border */}
-      <div className="border-b-4 border-gray-700 mt-10"></div>
+      </div>
     </div>
   );
 }

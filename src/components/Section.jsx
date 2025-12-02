@@ -5,7 +5,7 @@ import SocialStats from "../components/SocialStats";
 
 export default function Section({ data }) {
   return (
-    <section className="bg-[#f0f0f0] py-2 mt-12">
+    <section className="bg-[#f0f0f0] py-2 md:mt-12 mt-8">
       <div
         className="w-full px-4 md:px-10 py-8"
         style={{
@@ -17,7 +17,7 @@ export default function Section({ data }) {
       >
 
         {/* --- SUB TITLE --- */}
-        <h2 className="text-center text-4xl md:text-[45px] font-normal tracking-wide mb-10">
+        <h2 className="text-center text-[42px] md:text-[45px] leading-[1.1] tracking-tight font-normal tracking-wide mb-10">
           LATEST ARTICLES
         </h2>
 
@@ -27,13 +27,13 @@ export default function Section({ data }) {
           </div>
 
           <div className="flex flex-col gap-10">
-  <div className="border-r border-l border-b border-t-2 border-t-[#2f2f2f] border-[#d8d3d3c1]">
+  <div className="border-r border-l border-b border-t-2 md:mt-0 mt-12 border-t-[#2f2f2f] border-[#d8d3d3c1]">
 
     {/* TOP BORDER LINE (no padding above it) */}
     <div className="border-t border-[#2f2f2f] mt-0.5" />
 
     {/* Apply padding only to the content below */}
-    <div className=" pt-0">
+    <div className=" pt-0 ">
       <AuthorsSection />
       <CommentsSection />
       <SocialStats />

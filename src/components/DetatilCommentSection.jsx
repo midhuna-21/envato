@@ -26,7 +26,9 @@ export default function DetailCommentSection() {
   ];
 
   return (
-    <div className="w-full mt-8">
+    <div className="w-full border-t-2 border-b-2 border-[#2f2f2f]">
+      <div className="border-t border-b border-[#2f2f2f] mt-0.5 mb-0.5">
+
       <h2 className="text-[32px] text-[#2f2f2f] mb-6">
         Comments ({comments.length})
       </h2>
@@ -67,12 +69,10 @@ export default function DetailCommentSection() {
             </button>
           </div>
 
-          {/* Divider */}
-          {i !== comments.length - 1 && (
-            <div className="w-full border-b mt-6 border-gray-300"></div>
-          )}
+       
         </div>
       ))}
+      </div>
 
     </div>
   );

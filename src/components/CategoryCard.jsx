@@ -16,7 +16,6 @@ export default function CategoryCard({ item }) {
     <div className="max-w-xl mx-auto bg-white text-[#333] border-t-2 border-[#2f2f2f]">
       <div className="border-t border-[#2f2f2f] mt-0.5" />
       <div className="pt-4 pb-5 p-2">
-
         <Link href={`/${item.category}/${item.slug}`} title={item.title}>
           <div className="relative w-full h-[260px] border border-[#d7d7d7] overflow-hidden">
             <Image
