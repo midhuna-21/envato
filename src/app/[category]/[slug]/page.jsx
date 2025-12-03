@@ -63,7 +63,7 @@ export default async function DetailPage({ params }) {
 
     return (
         <main>
-            <Breadcrumb />
+            <Breadcrumb category={article.category} title={article.title} />
             <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-22">
                 <DetailTitle title={article.category} description={article.shortdescription} />
                 <Article article={article} otherArticles={otherArticles} />

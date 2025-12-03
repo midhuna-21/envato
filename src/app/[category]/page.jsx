@@ -43,12 +43,10 @@ export default async function CategoryPage({ params }) {
 
   return (
     <>
-      <Breadcrumb />
+      <Breadcrumb category={category} />
       <SectionTitle title={category} />
       <div >
-
         <PaginatedGrid data={data} />
-
       </div>
     </>
   );

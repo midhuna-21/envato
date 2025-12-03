@@ -1,22 +1,25 @@
+import Link from "next/link";
 import React from "react";
 
-const BlogCard = ({ image, category, title, date, comments, description }) => {
+const BlogCard = ({ image, category, title, date, slug, description }) => {
   return (
     <div className="w-full">
-      <div className="relative w-full">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-[280px] object-cover"
-        />
-        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 
+      <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug}>
+        <div className="relative w-full">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-[280px] object-cover"
+          />
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 
                         bg-[#2f2f2f] text-white text-sm tracking-wide 
                         px-4 py-2 shadow-md border border-gray-300">
-          <span className="mx-1">♦</span>
-          {category}
-          <span className="mx-1">♦</span>
+            <span className="mx-1">♦</span>
+            {category}
+            <span className="mx-1">♦</span>
+          </div>
         </div>
-      </div>
+      </Link>
       <h2 className="text-[22px] md:text-[32px] leading-[1.1] tracking-tight text-center mt-6 mb-3 font-medium px-4 line-clamp-1">
         {title}
       </h2>
@@ -27,18 +30,18 @@ const BlogCard = ({ image, category, title, date, comments, description }) => {
         {description}
       </p>
 
-      {/* Read More Section */}
       <div className="w-full flex flex-col items-center">
         <div className="w-full">
           <div className="border-t-2 border-[#2f2f2f]" />
           <div className="border-t border-[#2f2f2f] mt-0.5" />
         </div>
-
-        <div className="my-2 flex justify-center">
-          <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
-            Read More →
-          </span>
-        </div>
+        <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug}>
+          <div className="my-2 flex justify-center">
+            <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
+              Read More →
+            </span>
+          </div>
+        </Link>
 
         <div className="w-full">
           <div className="border-t-2 border-[#2f2f2f]" />
@@ -62,7 +65,7 @@ export default function BlogGrid({ data }) {
             category={item.category}
             title={item.title}
             date={item.date}
-            comments={item.comments || "0"}
+            slug={item.slug}
             description={item.shortdescription}
           />
         ))}

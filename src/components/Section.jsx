@@ -24,23 +24,16 @@ export default function Section({ data }) {
           <div className="lg:col-span-2">
             <BlogGrid data={data} />
           </div>
-
           <div className="flex flex-col gap-10">
-  <div className="border-r border-l border-b border-t-2 md:mt-0 mt-12 border-t-[#2f2f2f] border-[#d8d3d3c1]">
-
-    {/* TOP BORDER LINE (no padding above it) */}
-    <div className="border-t border-[#2f2f2f] mt-0.5" />
-
-    {/* Apply padding only to the content below */}
-    <div className=" pt-0 ">
-      <AuthorsSection />
-      <CommentsSection />
-      <SocialStats />
-    </div>
-
-  </div>
-</div>
-
+            <div className="border-r border-l border-b border-t-2 md:mt-0 mt-12 border-t-[#2f2f2f] border-[#d8d3d3c1]">
+              <div className="border-t border-[#2f2f2f] mt-0.5" />
+              <div className=" pt-0 ">
+                <AuthorsSection />
+                <CommentsSection />
+                <SocialStats />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

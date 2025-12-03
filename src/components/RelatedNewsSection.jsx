@@ -19,6 +19,7 @@ export default function RelatedPostsSection({ otherArticles }) {
               date={item.date}
               comments={item.comments}
               author={item.author}
+              slug={item.slug}
             />
           ))}
         </div>

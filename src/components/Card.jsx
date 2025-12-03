@@ -1,6 +1,7 @@
+import Link from "next/link";
 import React from "react";
 
-const Card = ({ label, score, title, description }) => {
+const Card = ({ category, slug, title, description }) => {
   return (
     <div
       className="
@@ -27,7 +28,7 @@ const Card = ({ label, score, title, description }) => {
           "
         >
           <span>♦</span>
-          {label}
+          {category}
           <span>♦</span>
         </span>
       </div>
@@ -47,23 +48,25 @@ const Card = ({ label, score, title, description }) => {
         >
           {description}
         </p>
-        <div className="w-full flex flex-col items-center">
-        <div className="w-full">
-          <div className="border-t-2 border-[#2f2f2f]" />
-          <div className="border-t border-[#2f2f2f] mt-0.5" />
-        </div>
+        <div className="w-full flex flex-col items-center cursor-pointer">
+          <div className="w-full">
+            <div className="border-t-2 border-[#2f2f2f]" />
+            <div className="border-t border-[#2f2f2f] mt-0.5" />
+          </div>
 
-        <div className="my-2 flex justify-center">
-          <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
-            Read More →
-          </span>
-        </div>
+          <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug}>
+            <div className="my-2 flex justify-center">
+              <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
+                Read More →
+              </span>
+            </div>
+          </Link>
 
-        <div className="w-full">
-          <div className="border-t-2 border-[#2f2f2f]" />
-          <div className="border-t border-[#2f2f2f] mt-0.5" />
+          <div className="w-full">
+            <div className="border-t-2 border-[#2f2f2f]" />
+            <div className="border-t border-[#2f2f2f] mt-0.5" />
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
@@ -99,9 +102,10 @@ export default function ThreeCardsSection({ data }) {
             )}
 
             <Card
-              label={item.category}
+              category={item.category}
               score={item.score}
               title={item.title}
+              slug={item.slug}
               description={item.shortdescription}
             />
           </div>

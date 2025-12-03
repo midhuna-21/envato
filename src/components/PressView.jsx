@@ -19,9 +19,11 @@ export default function PressViewHeader() {
     <div className="mt-[110px] md:mt-[80px] w-full bg-gradient-to-b from-[#fafafa] to-[#efefef] py-2 text-center select-none">
 
       {/* Title */}
+      <Link href='/'>
       <h1 className="text-[55px] md:text-[58px] font-light tracking-wide text-[#2f2f2f] mb-2">
         PressView
       </h1>
+      </Link>
 
       {/* === MOBILE ARROW TO OPEN CATEGORY SECTION === */}
       <div className="md:hidden flex justify-center mb-3">

@@ -15,7 +15,7 @@ export default function Article({ article, otherArticles }) {
   return (
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        
+
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-7">
           <NewsArticle article={article} />
@@ -27,23 +27,17 @@ export default function Article({ article, otherArticles }) {
         </div>
 
         {/* RIGHT SIDEBAR */}
-          <div className="flex flex-col md:mt-0 mt-1">
+        <div className="flex flex-col md:mt-0 mt-1">
           <div className="border-r border-l border-b border-t-2 border-t-[#2f2f2f] border-[#d8d3d3c1]">
-        
-            {/* TOP BORDER LINE (no padding above it) */}
             <div className="border-t border-[#2f2f2f] mt-0.5" />
-        
-            {/* Apply padding only to the content below */}
             <div className="pt-0 ">
-                <CategoriesWidget />
+              <CategoriesWidget />
               <CommentsSection />
               <AuthorsSection />
               <SocialStats />
             </div>
-        
           </div>
         </div>
-     
       </div>
     </div>
   );

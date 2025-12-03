@@ -60,9 +60,11 @@ export default function CategoryCard({ item }) {
           <FaInstagram className="cursor-pointer" />
         </div>
 
-        <button className="bg-[#333] text-white px-3 py-2 text-[14px] font-serif font-normal tracking-widest hover:bg-black">
-          read more
-        </button>
+        <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.slug}>
+          <button className="bg-[#333] text-white px-3 py-2 text-[14px] font-serif font-normal tracking-widest hover:bg-[#171616] cursor-pointer">
+            read more
+          </button>
+        </Link>
       </div>
       <div className="border  mt-0.5 mb-8"></div>
     </div>

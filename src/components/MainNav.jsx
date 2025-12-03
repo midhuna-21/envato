@@ -58,11 +58,11 @@ export default function MainNav() {
         <div className="max-w-[1891px] mx-auto px-10 py-1 hidden md:flex items-center justify-between">
 
           <ul className="flex items-center text-[#C1C0B4] text-[13px] tracking-wide gap-4 font-serif">
-            <li className="hover:text-white transition">Home</li>
+            <li className="hover:text-white transition cursor-pointer">Home</li>
             <li>*</li>
-            <li className="hover:text-white transition">About</li>
+            <li className="hover:text-white transition cursor-pointer">About</li>
             <li>*</li>
-            <li className="hover:text-white transition">Contact</li>
+            <li className="hover:text-white transition cursor-pointer">Contact</li>
             {/* <li>*</li>
             <li className="hover:text-white transition">Correction Policy</li>
             <li>*</li>
@@ -71,7 +71,7 @@ export default function MainNav() {
           </ul>
 
           <div className="flex items-center gap-5">
-            <div className="flex items-center gap-4 text-[#d4d1c7]">
+            <div className="flex items-center cursor-pointer gap-4 text-[#d4d1c7]">
               <FaTwitter size={16} />
               <FaFacebookF size={16} />
               <FaSkype size={16} />
@@ -97,7 +97,7 @@ export default function MainNav() {
           <div className="md:hidden bg-[#2f2f2f] px-10 py-4 font-serif">
 
             <ul className="flex flex-col text-[#d4d1c7] text-[13px] tracking-wide gap-3">
-              {["HOME", "FEATURES", "PAGES", "PORTFOLIO", "BLOG", "SHOP", "CONTACTS"].map(
+              {["HOME", "ABOUT", "Contact"].map(
                 (item, index) => (
                   <li
                     key={index}
@@ -112,7 +112,7 @@ export default function MainNav() {
               )}
             </ul>
 
-            <div className="flex items-center gap-4 text-[#c1c0b4] text-[18px] justify-center mt-4">
+            <div className="flex items-center gap-4 cursor-pointer text-[#c1c0b4] text-[18px] justify-center mt-4">
               <FaTwitter />
               <FaFacebookF />
               <FaSkype />

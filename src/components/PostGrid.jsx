@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaPencilAlt } from "react-icons/fa";
 
 export default function PostGrid({ data }) {
@@ -32,7 +33,8 @@ export default function PostGrid({ data }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {data.map((item) => (
             <div key={item.slug} className="text-center">
-              <div className="relative group">
+              <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.slug}>
+              <div className="relative group cursor-pointer">
                 <div className="relative w-full h-[250px] overflow-hidden border border-gray-200 shadow-sm">
                   <Image
                     src={item.image}
@@ -47,6 +49,7 @@ export default function PostGrid({ data }) {
                   <span className="mx-1">♦</span>
                 </div>
               </div>
+              </Link>
               <h2
                 className="mt-5 text-[22px] line-clamp-1 md:line-clamp-2 md:text-[26px] font-light text-[#2f2f2f] leading-tight"
               >

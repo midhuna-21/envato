@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function HeroSection({ data }) {
   const [current, setCurrent] = useState(0);
@@ -64,12 +65,15 @@ export default function HeroSection({ data }) {
           >
             ✕
           </div>
-          <button className="relative group text-[6px] md:text-[13px] px-2 py-0.5   md:px-4 md:py-1 font-bold text-gray-200 bg-[#2f2f2f] border-[1px] md:border-[4px] border-[#2f2f2f] hover:bg-white hover:border-white transition-all duration-300 md:mb-10 mb-3">
+             <Link href={`/${currentSlide.category}/${currentSlide.slug}`} className="text-decoration-none" title={currentSlide.slug}>
+          
+          <button className=" cursor-pointer relative group text-[6px] md:text-[13px] px-2 py-0.5   md:px-4 md:py-1 font-bold text-gray-200 bg-[#2f2f2f] border-[1px] md:border-[4px] border-[#2f2f2f] hover:bg-white hover:border-white transition-all duration-300 md:mb-10 mb-3">
             <span className="absolute inset-0 border md:border-[2px] border-white group-hover:border-[#2f2f2f] pointer-events-none"></span>
             <span className="relative group-hover:text-[#2f2f2f]">
               read more
             </span>
           </button>
+          </Link>
           <div className="flex justify-center md:space-x-4 space-x-1">
             {data.map((_, i) => (
               <button

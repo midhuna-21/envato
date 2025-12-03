@@ -2,6 +2,15 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaRss, FaSkype, FaTwitter, FaUser } from "react-icons/fa";
 
 export default function NewsArticle({ article }) {
+  // Split description into sentences
+  const sentences = article.description.split(". ");
+  // Calculate roughly 1/4th of sentences per paragraph
+  const chunkSize = Math.ceil(sentences.length / 4);
+  // Create 4 paragraphs
+  const paragraphs = [];
+  for (let i = 0; i < sentences.length; i += chunkSize) {
+    paragraphs.push(sentences.slice(i, i + chunkSize).join(". ") + ".");
+  }
 
   return (
     <div className="mx-auto">
@@ -23,23 +32,22 @@ export default function NewsArticle({ article }) {
 
       {/* Meta */}
       <div className="text-[#2f2f2f] mt-2 space-x-3 font-serif text-[12px] flex flex-wrap justify-center items-center">
-
         {/* USER ICON */}
         <FaUser className="text-[#333] text-[14px]" />
-
         <span>By {article.author}</span>
         <span className="text-[#ccc]">|</span>
         <span>{article.date}</span>
       </div>
 
-      {/* Content */}
-      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[12px] md:text-[15px] font-serif leading-[1.3] tracking-tight ">
-        <p>{article.description}</p>
+      {/* Content divided into 4 paragraphs */}
+      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[12px] md:text-[15px] font-serif leading-[1.3] tracking-tight">
+        {paragraphs.map((para, index) => (
+          <p key={index}>{para}</p>
+        ))}
       </div>
 
       {/* Share Section */}
-      <div className="flex items-center justify-between  pt-0.5 border-t border-[#2f2f2f] border-b mt-10 pb-2 pt-2">
-
+      <div className="flex items-center justify-between pt-0.5 border-t border-[#2f2f2f] border-b mt-10 pb-2 pt-2">
         <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
           <span className="font-normal font-serif">SHARE ON:</span>
           <FaTwitter className="cursor-pointer" />
@@ -49,7 +57,7 @@ export default function NewsArticle({ article }) {
           <FaInstagram className="cursor-pointer" />
         </div>
       </div>
-      <div className="border  mt-0.5 mb-8"></div>
+      <div className="border mt-0.5 mb-8"></div>
     </div>
   );
 }

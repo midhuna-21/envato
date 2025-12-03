@@ -11,8 +11,6 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
 
   return (
     <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-22">
-
-      {/* Masonry Grid */}
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
         {paginatedData.map((item, i) => (
           <div key={i} className="break-inside-avoid mb-6">
@@ -20,12 +18,8 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
           </div>
         ))}
       </div>
-
-      {/* Pagination */}
       <div className="flex justify-center border border-[#ccc]">
         <div className="flex items-center space-x-0">
-
-          {/* Previous */}
           <button
             disabled={page === 1}
             onClick={() => setPage(page - 1)}
@@ -33,8 +27,6 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
           >
             Previous
           </button>
-
-          {/* Page Numbers */}
           {[...Array(totalPages)].map((_, i) => {
             const pageNumber = i + 1;
             const isActive = pageNumber === page;
@@ -50,8 +42,6 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
               </button>
             );
           })}
-
-          {/* Next */}
           <button
             disabled={page === totalPages}
             onClick={() => setPage(page + 1)}
@@ -59,7 +49,6 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
           >
             Next
           </button>
-
         </div>
       </div>
     </div>
