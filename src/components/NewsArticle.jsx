@@ -33,7 +33,7 @@ export default function NewsArticle({ article }) {
       </div>
 
       {/* Content */}
-      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[12px] md:text-[14px] font-serif leading-[1.3] tracking-tight ">
+      <div className="mt-4 space-y-5 text-[#2f2f2f] text-[12px] md:text-[15px] font-serif leading-[1.3] tracking-tight ">
         <p>{article.description}</p>
       </div>
 

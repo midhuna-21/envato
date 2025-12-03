@@ -6,7 +6,6 @@ const categories = [
   { label: "Business", slug: "business" },
   { label: "Politics", slug: "politics" },
   { label: "Health", slug: "health" },
-  { label: "Lifestyle", slug: "lifestyle" },
   { label: "Education", slug: "education" },
   { label: "Science", slug: "science" },
   { label: "Sports", slug: "sports" },

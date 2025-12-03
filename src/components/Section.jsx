@@ -16,7 +16,6 @@ export default function Section({ data }) {
         }}
       >
 
-        {/* --- SUB TITLE --- */}
         <h2 className="text-center text-[42px] md:text-[45px] leading-[1.1] tracking-tight font-normal tracking-wide mb-10">
           LATEST ARTICLES
         </h2>

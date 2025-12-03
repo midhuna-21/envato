@@ -29,49 +29,44 @@ export default function DetailCommentSection() {
     <div className="w-full border-t-2 border-b-2 border-[#2f2f2f]">
       <div className="border-t border-b border-[#2f2f2f] mt-0.5 mb-0.5">
 
-      <h2 className="text-[32px] text-[#2f2f2f] mb-6">
-        Comments ({comments.length})
-      </h2>
+        <h2 className="text-[32px] text-[#2f2f2f] mb-6">
+          Comments
+        </h2>
 
-      {comments.map((c, i) => (
-        <div key={i} className="mb-8">
+        {comments.map((c, i) => (
+          <div key={i} className="mb-8">
 
-          {/* Row */}
-          <div className="flex gap-5">
-            
-            {/* Image */}
-            <img
-              src={c.image}
-              alt={c.name}
-              className="w-20 h-20 object-cover"
-            />
+            <div className="flex gap-5">
+              <img
+                src={c.image}
+                alt={c.name}
+                className="w-20 h-20 object-cover"
+              />
+              <div className="flex-1">
+                <div className="flex items-center gap-3 text-[10px] md:text[12px] font-serif mb-2">
 
-            {/* Content */}
-            <div className="flex-1">
+                  <span className="font-bold text-[#2f2f2f]">{c.name}</span>
+                  <span className="text-[#2f2f2f] font-semibold">{c.date}</span>
+                  <span className="text-gray-400">{c.time}</span>
 
-              {/* Name + Date */}
-              <div className="flex items-center gap-3 text-[12px] font-serif mb-2">
-                <span className="font-bold text-[#2f2f2f]">{c.name}</span>
-                <span className="text-[#2f2f2f] font-semibold">{c.date}</span>
-                <span className="text-gray-400">{c.time}</span>
+                  <button className="ml-auto bg-[#2f2f2f] h-7 px-3 text-[#c1c0b4] flex items-center gap-2 text-[11px]">
+                    <FaReply className="text-[#c1c0b4]" />
+                    Reply
+                  </button>
+
+                </div>
+
+                {/* Text */}
+                <p className="text-[#2f2f2f] font-serif text-[12px] leading-[1.3] tracking-tight">
+                  {c.text}
+                </p>
               </div>
 
-              {/* Text */}
-              <p className="text-[#2f2f2f] font-serif text-[12px]">
-                {c.text}
-              </p>
             </div>
 
-            {/* Reply button */}
-            <button className="bg-[#2f2f2f] h-8 px-3 text-[#c1c0b4] flex items-center gap-2 text-sm">
-              <FaReply className="text-[#c1c0b4]" />
-              Reply
-            </button>
-          </div>
 
-       
-        </div>
-      ))}
+          </div>
+        ))}
       </div>
 
     </div>

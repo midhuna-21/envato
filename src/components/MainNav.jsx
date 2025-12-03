@@ -60,17 +60,14 @@ export default function MainNav() {
           <ul className="flex items-center text-[#C1C0B4] text-[13px] tracking-wide gap-4 font-serif">
             <li className="hover:text-white transition">Home</li>
             <li>*</li>
-            <li className="hover:text-white transition">Features</li>
+            <li className="hover:text-white transition">About</li>
             <li>*</li>
-            <li className="text-white font-semibold">Pages</li>
+            <li className="hover:text-white transition">Contact</li>
+            {/* <li>*</li>
+            <li className="hover:text-white transition">Correction Policy</li>
             <li>*</li>
-            <li className="hover:text-white transition">Portfolio</li>
-            <li>*</li>
-            <li className="hover:text-white transition">Blog</li>
-            <li>*</li>
-            <li className="hover:text-white transition">Shop</li>
-            <li>*</li>
-            <li className="hover:text-white transition">Contacts</li>
+            <li className="hover:text-white transition">Editorial Policy</li> */}
+
           </ul>
 
           <div className="flex items-center gap-5">

@@ -10,7 +10,7 @@ export default function Header() {
           <Image
             src="/images/envato-logo.webp"
             alt="Envato Market"
-            width={100}       // default small
+            width={100}      
             height={30}
             className="object-contain 
                        w-[85px] h-auto      // mobile

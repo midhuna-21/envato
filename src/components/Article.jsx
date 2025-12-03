@@ -27,14 +27,14 @@ export default function Article({ article, otherArticles }) {
         </div>
 
         {/* RIGHT SIDEBAR */}
-          <div className="flex flex-col">
+          <div className="flex flex-col md:mt-0 mt-1">
           <div className="border-r border-l border-b border-t-2 border-t-[#2f2f2f] border-[#d8d3d3c1]">
         
             {/* TOP BORDER LINE (no padding above it) */}
             <div className="border-t border-[#2f2f2f] mt-0.5" />
         
             {/* Apply padding only to the content below */}
-            <div className="pt-0">
+            <div className="pt-0 ">
                 <CategoriesWidget />
               <CommentsSection />
               <AuthorsSection />
@@ -43,11 +43,7 @@ export default function Article({ article, otherArticles }) {
         
           </div>
         </div>
-        {/* <aside className="space-y-10">
-          <CategoriesWidget />
-          <SidebarComments />
-          <AuthorsWidget />
-        </aside> */}
+     
       </div>
     </div>
   );

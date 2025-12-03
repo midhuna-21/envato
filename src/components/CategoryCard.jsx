@@ -43,7 +43,7 @@ export default function CategoryCard({ item }) {
           <span>{item.date}</span>
         </div>
 
-        <p className="text-[13px] text-gray-700 leading-relaxed font-serif text-center px-2">
+        <p className="text-[13px] text-gray-700 font-serif text-center leading-[1.3] tracking-tight px-2">
           {item.shortdescription}
         </p>
 
