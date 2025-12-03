@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         </Link>
 
-        <a
+        {/* <a
           href="#"
           className="bg-[#82B440] text-white 
                      px-3 py-1           
@@ -33,7 +33,7 @@ export default function Header() {
                      transition-all"
         >
           Buy now
-        </a>
+        </a> */}
 
       </div>
     </header>
