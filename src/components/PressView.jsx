@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 const categories = [
+  { label: "World", slug: "world" },
   { label: "Business", slug: "business" },
   { label: "Politics", slug: "politics" },
   { label: "Health", slug: "health" },
-  { label: "Education", slug: "education" },
-  { label: "Science", slug: "science" },
+  { label: "Finance", slug: "finance" },
   { label: "Sports", slug: "sports" },
-  { label: "Technology", slug: "technology" },
+  { label: "Entertainment", slug: "entertainment" },
 ];
 
 export default function PressViewHeader() {

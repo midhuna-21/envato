@@ -7,14 +7,12 @@ import PressviewHero from "../components/PressviewHero";
 import Section from "../components/Section";
 import Image from "next/image";
 import businessData from '../../public/data/business.json'
-import educationData from '../../public/data/education.json';
+import financeData from '../../public/data/finance.json';
 import healthData from '../../public/data/health.json';
 import entertainmentData from '../../public/data/entertainment.json';
 import politicsData from '../../public/data/politics.json';
-import scienceData from '../../public/data/science.json';
+import worldData from '../../public/data/world.json';
 import sportsData from '../../public/data/sports.json';
-import technologyData from '../../public/data/technology.json';
-
 
 export default function Home() {
   return (
@@ -24,8 +22,8 @@ export default function Home() {
     <PressviewHero />
     <PostGrid data={[politicsData[1],politicsData[2],politicsData[3],politicsData[4]]}/>
     {/* <LatestReviews /> */}
-    <Card data={[businessData[4],sportsData[1],technologyData[0]]}/>
-    <Section data={[entertainmentData[0],scienceData[0],healthData[0],educationData[0]]}/>
+    <Card data={[businessData[4],sportsData[1],worldData[0]]}/>
+    <Section data={[entertainmentData[0],worldData[1],healthData[0],financeData[0]]}/>
     
     </div>
   );

@@ -15,7 +15,6 @@ export default function MainNav() {
 
   return (
     <>
-      {/* ===== MOBILE TOP BAR ===== */}
       <div className="md:hidden w-full bg-[#EEEDE3] flex items-center justify-between px-2 py-1 fixed top-[36px] left-0 z-[9999]">
         <span className="text-[#2f2f2f] font-serif text-[15px]">Menu</span>
 
