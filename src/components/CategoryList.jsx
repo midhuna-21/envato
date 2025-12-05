@@ -4,20 +4,18 @@ import Link from "next/link";
 const categories = [
   { label: "Business", slug: "business" },
   { label: "Politics", slug: "politics" },
-  { label: "Health", slug: "health" },
-  { label: "Lifestyle", slug: "lifestyle" },
-  { label: "Education", slug: "education" },
-  { label: "Science", slug: "science" },
+  { label: "World", slug: "world" },
+  { label: "U.S", slug: "us" },
+  { label: "Finance", slug: "finance" },
   { label: "Sports", slug: "sports" },
-  { label: "Technology", slug: "technology" },
+  { label: "Entertainment", slug: "entertainment" },
 ];
 
 export default function CategoryList() {
   return (
     <div className="flex flex-wrap justify-center gap-12 px-4">
       {categories.map((item, index) => {
-        const width = item.label.length * 6;
-
+        const width = item.label.length * 6; 
         return (
           <Link key={item.slug} href={`/${item.slug}`}>
             <div className="text-center cursor-pointer hover:opacity-70 transition">

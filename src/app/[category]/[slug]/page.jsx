@@ -1,49 +1,45 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import businessData from '../../../../public/data/business.json';
-import technologyData from '../../../../public/data/technology.json';
 import sportsData from '../../../../public/data/sports.json';
-import healthData from '../../../../public/data/health.json';
 import politicsData from '../../../../public/data/politics.json';
-import scienceData from '../../../../public/data/science.json';
+import worldData from '../../../../public/data/world.json';
+import usData from '../../../../public/data/us.json';
 import entertainmentData from '../../../../public/data/entertainment.json'
-import educationData from '../../../../public/data/education.json';
+import financeData from '../../../../public/data/finance.json'
 import Article from '../../../components/Article';
 import Breadcrumb from '../../../components/BreadCrump';
 import DetailTitle from '../../../components/DetailTitle';
 
+
 export async function generateStaticParams() {
     const allData = [
-        { category: 'politics', articles: politicsData },
+        { category: 'world', articles: worldData },
+        { category: 'us', articles: usData },
         { category: 'business', articles: businessData },
-        { category: 'technology', articles: technologyData },
+        { category: 'politics', articles: politicsData },
+        { category: 'finance', articles: financeData },
         { category: 'sports', articles: sportsData },
-        { category: 'science', articles: scienceData },
-        { category: 'health', articles: healthData },
         { category: 'entertainment', articles: entertainmentData },
-        { category: 'education', articles: educationData },
-
     ];
 
-    const params = allData.flatMap(({ category, articles }) =>
+    return allData.flatMap(({ category, articles }) =>
         articles.map((article) => ({
             category,
             slug: article.slug,
         }))
     );
-
-    return params;
 }
+
 
 const allData = {
     business: businessData,
-    technology: technologyData,
+    world: worldData,
     sports: sportsData,
-    health: healthData,
+    us: usData,
     politics: politicsData,
-    science: scienceData,
+    finance: financeData,
     entertainment: entertainmentData,
-    education: educationData,
 };
 
 
@@ -55,6 +51,7 @@ export default async function DetailPage({ params }) {
     if (!data) return notFound();
 
     const article = data.find(item => item.slug === slug);
+    console.log(article,'article found not ')
     if (!article) {
         return <div className="p-4">No article found for slug {slug}</div>;
     }

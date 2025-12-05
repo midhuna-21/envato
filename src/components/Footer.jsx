@@ -1,7 +1,7 @@
 import businessData from '../../public/data/business.json';
 import politicsData from '../../public/data/politics.json';
 import sportsData from '../../public/data/sports.json';
-import healthData from '../../public/data/health.json';
+import usData from '../../public/data/us.json';
 import { FaTwitter, FaFacebookF, FaSkype, FaRss, FaInstagram } from "react-icons/fa";
 
 

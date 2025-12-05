@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaRss, FaSkype, FaTwitter, FaUser } from "react-icons/fa";
 
 export default function NewsArticle({ article }) {
-  // Split description into sentences
-  const sentences = article.description.split(". ");
-  // Calculate roughly 1/4th of sentences per paragraph
+    // Split description into sentences
+    const sentences = article.description.split(". ");
+    // Calculate roughly 1/4th of sentences per paragraph
   const chunkSize = Math.ceil(sentences.length / 4);
   // Create 4 paragraphs
   const paragraphs = [];
