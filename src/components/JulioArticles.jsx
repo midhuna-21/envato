@@ -31,10 +31,12 @@ export default function JulioArticles({ article }) {
         {article.sub.map((item, index) => (
           <div key={index} className="space-y-3">
             {/* Title */}
-            <h2 className="text-[18px] md:text-[22px] font-extrabold uppercase tracking-wide relative inline-block">
-              {item.title}
-              <span className="absolute left-0 -bottom-1 w-12 h-[2px] bg-[#2f2f2f] rounded"></span>
-            </h2>
+            {item.title && (
+              <h2 className="text-[18px] md:text-[22px] font-extrabold uppercase tracking-wide relative inline-block">
+                {item.title}
+                <span className="absolute left-0 -bottom-1 w-12 h-[2px] bg-[#2f2f2f] rounded"></span>
+              </h2>
+            )}
 
             {/* Paragraph */}
             <p className="text-[14px] md:text-[16px] text-[#4a4a4a]">

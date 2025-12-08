@@ -21,7 +21,7 @@ export default function Article({ article, otherArticles }) {
           <NewsArticle article={article} />
           <ProfileCard />
           <PostNavigation />
-          <DetailCommentSection />
+          {/* <DetailCommentSection /> */}
           <ReplyForm />
           <RelatedPostsSection otherArticles={otherArticles} />
         </div>
@@ -32,7 +32,7 @@ export default function Article({ article, otherArticles }) {
             <div className="border-t border-[#2f2f2f] mt-0.5" />
             <div className="pt-0 ">
               <CategoriesWidget />
-              <CommentsSection />
+              {/* <CommentsSection /> */}
               <AuthorsSection />
               <SocialStats />
             </div>

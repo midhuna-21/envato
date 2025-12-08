@@ -27,7 +27,7 @@ export default function ProfileCard() {
         {/* Image */}
         <div className="w-full h-64 md:h-72">
           <img
-            src="/images/author-02.jpg"
+            src="/images/marcus-bennett.webp"
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -38,15 +38,12 @@ export default function ProfileCard() {
 
           {/* Name */}
           <h2 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal mb-2 md:mb-3">
-            Oliver Matthews
+          Marcus Bennett
           </h2>
 
           {/* Description */}
           <p className="text-[#2f2f2f] font-serif leading-relaxed max-w-xl mx-auto text-[12px]">
-            Nullam varius lacinia congue. Donec ac dapibus elit. Proin facilisis
-            nulla in est mattis, ut dapibus justo euismod. Proin sollicitudin
-            a mi vel fermentum. Phasellus aliquam sollicitudin libero nec
-            tincidunt. Sed posuere nisl sit amet erat faucibus, vitae pharetra.
+          Outside of managing coverage, he mentors reporters and experiments with new storytelling approaches to keep the newsroom moving forward.
           </p>
 
           {/* Close Icon */}

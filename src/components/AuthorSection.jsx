@@ -1,11 +1,11 @@
 export default function AuthorsSection() {
   const authors = [
-    "/images/author-01.jpg",
-    "/images/author-02.jpg",
-    "/images/author-03.jpg",
-    "/images/author-04.jpg",
-    "/images/author-05.jpg",
-    "/images/author-06.jpg",
+    "/images/claire-addison.webp",
+    "/images/marcus-bennett.webp",
+    "/images/jenna-whitmore.webp",
+    "/images/sophie-langford.webp",
+    "/images/travis-monroe.webp",
+    "/images/evan-carlisle.webp",
   ];
 
   return (

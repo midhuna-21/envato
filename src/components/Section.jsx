@@ -29,7 +29,7 @@ export default function Section({ data }) {
               <div className="border-t border-[#2f2f2f] mt-0.5" />
               <div className=" pt-0 ">
                 <AuthorsSection />
-                <CommentsSection />
+                {/* <CommentsSection /> */}
                 <SocialStats />
               </div>
             </div>

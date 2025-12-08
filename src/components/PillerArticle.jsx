@@ -22,7 +22,7 @@ export default function PillerArticle({article}) {
           <JulioArticles article={article} />
           <ProfileCard />
           <PostNavigation />
-          <DetailCommentSection />
+          {/* <DetailCommentSection /> */}
           <ReplyForm />
           {/* <RelatedPostsSection otherArticles={otherArticles} /> */}
         </div>

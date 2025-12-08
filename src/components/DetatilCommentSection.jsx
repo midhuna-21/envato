@@ -3,17 +3,17 @@ import { FaReply } from "react-icons/fa";
 export default function DetailCommentSection() {
   const comments = [
     {
-      name: "John Doe",
+      name: "Claire Addison",
       date: "August 17",
       time: "47 minutes ago",
-      image: "/images/author-01.jpg",
+      image: "/images/claire-addison.webp",
       text: "Vestibulum id nisl a neque malesuada hendrerit. Mauris ut porttitor nunc, ut volutpat nisl. Nam ullamcorper ultricies metus vel ornare. Vivamus tincidunt erat in mi accumsan, a sollicitudin risus",
     },
     {
       name: "Clark Cloe",
       date: "August 18",
       time: "47 minutes ago",
-      image: "/images/author-02.jpg",
+      image: "/images/marcus-bennett.jpg",
       text: "Vestibulum porta libero leo, sed malesuada enim auctor eget. Duis pretium ipsum nec mi adipiscing fermentum ac eget mauris. Ut posuere volutpat mi, eget condimentum nibh",
     },
     {
