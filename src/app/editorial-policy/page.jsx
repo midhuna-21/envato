@@ -1,76 +1,111 @@
+import Link from "next/link";
+import { CheckCircle, Eye, Zap, BookOpen, MessageSquare } from "lucide-react";
+
 export default function EditorialPolicyPage() {
   const sections = [
     {
-      title: "Editorial Independence",
-      text: "Our newsroom operates free from political, commercial, or personal influence. All editorial decisions are made independently.",
-      icon: "fa-shield-alt",
+      title: "Our Commitment",
+      icon: CheckCircle,
+      content:
+        "FiscalFusion is committed to delivering accurate, fair, and unbiased journalism. We adhere to high editorial standards to ensure that our reporting is reliable and trustworthy. Our goal is to inform and empower readers with clear and factual news.",
     },
     {
-      title: "Fact-Checking Standards",
-      text: "Each article undergoes a multi-step verification process ensuring accuracy, credibility, and responsible sourcing.",
-      icon: "fa-search",
-    },
-    {
-      title: "Ethical Journalism",
-      text: "We respect privacy, avoid sensationalism, and follow internationally recognized journalism ethics and best practices.",
-      icon: "fa-balance-scale",
+      title: "Accuracy & Verification",
+      icon: Zap,
+      content:
+        "All articles are fact-checked, and sources are verified before publication. In cases where errors occur, we promptly issue corrections with a clear notice describing the change. Our goal is to maintain trust by ensuring accurate reporting across all news categories.",
     },
     {
       title: "Transparency",
-      text: "Mistakes are corrected promptly with clear notes. Updates and revisions are always documented.",
-      icon: "fa-lightbulb",
+      icon: Eye,
+      content:
+        "We are transparent about our sources, methodology, and any potential conflicts of interest. Editorial decisions are made independently, free from influence by advertisers or external parties. Readers have the right to understand how news is gathered and reported.",
     },
     {
-      title: "Quality Review Process",
-      text: "Content goes through writer review, editorial checks, senior approval, and layout inspection before publication.",
-      icon: "fa-check-circle",
+      title: "Ethical Reporting",
+      icon: BookOpen,
+      content:
+        "We follow strict ethical guidelines in reporting, respecting privacy, avoiding sensationalism, and ensuring fairness. Our journalists are trained to cover stories responsibly while upholding integrity and professionalism.",
+    },
+    {
+      title: "Corrections & Feedback",
+      icon: MessageSquare,
+      content:
+        "Readers are encouraged to notify us about any errors or discrepancies. We review all feedback carefully and correct mistakes promptly.",
+      cta: true,
     },
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+    <div className="min-h-screen bg-white">
+      {/* HEADER */}
+      <section className="p-5 md:p-10  border-b border-gray-200">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+             Editorial Policy
+          </h1>
+            <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+            FiscalFusion maintains the highest standards of journalism. Our editorial 
+            policy ensures that every article we publish is accurate, transparent, 
+            and ethical.
+          </p>
+        </div>
+      </section>
 
-      {/* TITLE */}
-      <h1 className="text-center text-4xl font-bold tracking-wide text-gray-900">
-        Editorial Policy
-      </h1>
+      {/* POLICY SECTIONS */}
+       <section className="max-w-6xl mx-auto px-6 md:py-10 py-3">
+         <div className="space-y-5 md:space-y-10">
+          {sections.map((section, idx) => {
+            const Icon = section.icon;
+            return (
+              <div key={idx} className="flex gap-4 md:gap-6">
+                {/* ICON */}
+                <div className="flex-shrink-0 pt-1">
+                  <Icon className="w-7 h-7 md:w-8 md:h-8 text-[#2f2f2f]" />
+                </div>
 
-      {/* SUBTITLE */}
-      <p className="text-center text-gray-600 max-w-2xl mx-auto mt-4 leading-relaxed">
-        Our editorial standards uphold fairness, transparency, and
-        responsibility—ensuring every article meets the highest quality.
-      </p>
-
-      {/* COLORED DIVIDER */}
-      <div className="mt-8 w-20 h-1 bg-gray-800 mx-auto"></div>
-
-      {/* GRID OF SECTIONS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-
-        {sections.map((sec, i) => (
-          <div
-            key={i}
-            className="border border-gray-200 shadow-sm rounded-lg p-8 bg-white hover:shadow-lg transition"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-full">
-                <i className={`fa ${sec.icon} text-xl`}></i>
+                {/* CONTENT */}
+                <div className="flex-grow">
+                  <h2 className="text-2xl md:text-3xl font-semibold text-[#2f2f2f] leading-[1.3] tracking-tight mb-2">
+                    {section.title}
+                  </h2>
+                  <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+                    {section.content}
+                  </p>
+                  
+                </div>
               </div>
-              <h3 className="text-xl font-semibold">{sec.title}</h3>
-            </div>
+            );
+          })}
+        </div>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed">{sec.text}</p>
+      {/* PRINCIPLES GRID */}
+      <section className="bg-gray-50 py-10 ">
+        <div className="max-w-5xl mx-auto px-4 mb-5 md:mb-10">
+          <h2 className="text-2xl md:text-4xl font-light text-center mb-5 md:mb-10 text-gray-900">
+            Core Principles
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            {[
+              { title: "Independence", desc: "Free from external influence and advertiser pressure" },
+              { title: "Accountability", desc: "We stand behind our reporting and correct errors promptly" },
+              { title: "Fairness", desc: "All sides of a story are represented respectfully" },
+              { title: "Clarity", desc: "Complex news is explained in accessible language" },
+            ].map((principle, idx) => (
+              <div key={idx} className="p-8 bg-white rounded-sm border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                  {principle.title}
+                </h3>
+                <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+                  {principle.desc}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+      </section>
 
-      </div>
-
-      {/* CLOSING MESSAGE */}
-      <div className="text-center mt-16 text-gray-600 max-w-xl mx-auto leading-relaxed">
-        We continuously evolve our standards to maintain trust. Our editorial
-        guidelines reflect our mission to deliver responsible, ethical, 
-        and high-quality journalism.
-      </div>
     </div>
   );
 }

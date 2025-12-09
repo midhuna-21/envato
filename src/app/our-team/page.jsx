@@ -3,67 +3,77 @@ import AuthorCard from "../../components/AuthorCard";
 export default function OurTeamPage() {
   const authors = [
     {
-      image: "/demo/a1.jpg",
-      name: "Oliver Gray",
-      description:
-        "Nullam varius lacinia congue. Donec ac dapibus elit. Proin facilisis nulla in est mattis.",
+      name: "Claire Addison",
+      role: "Senior Investigative Reporter",
+      bio: "Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+      image: "/images/claire-addison.webp",
+      email: "",
+      twitter: "",
     },
     {
-      image: "/demo/a2.jpg",
-      name: "Serena Fischer",
-      description:
-        "Vestibulum id nisl a neque malesuada hendrerit. Mauris ut porttitor nunc, ut volutpat nisl.",
+      name: "Marcus Bennett",
+      role: "Political Correspondent",
+      bio: "Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+      image: "/images/marcus-bennett.webp",
+      email: "",
+      twitter: "",
     },
     {
-      image: "/demo/a3.jpg",
-      name: "John Deo",
-      description:
-        "Vivamus tincidunt erat in mi accumsan, a sollicitudin risus vestibulum ornare.",
+      name: "Jenna Whitmore",
+      role: "Entertainment Writer",
+      bio: "Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+      image: "/images/jenna-whitmore.webp",
+      email: "",
+      twitter: "",
     },
     {
-      image: "/demo/a4.jpg",
-      name: "Smiley Suzie",
-      description:
-        "Curabitur blandit velit elementum augue elementum scelerisque.",
+      name: "Evan Carlisle",
+      role: "U.S. News Reporter",
+      bio: "Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+      image: "/images/evan-carlisle.webp",
+      email: "",
+      twitter: "",
     },
     {
-      image: "/demo/a5.jpg",
-      name: "John Lemon",
-      description:
-        "Nullam varius lacinia congue. Donec ac dapibus elit. Proin facilisis nulla in est mattis.",
+      name: "Sophie Langford",
+      role: "Business & Finance Correspondent",
+      bio: "Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+      image: "/images/sophie-langford.webp",
+      email: "",
+      twitter: "",
     },
     {
-      image: "/demo/a6.jpg",
-      name: "Michael Grey",
-      description:
-        "Vestibulum id nisl a neque malesuada hendrerit. Etiam eget lorem commodo.",
+      name: "Travis Monroe",
+      role: "Sports Reporter",
+      bio: "Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+      image: "/images/travis-monroe.webp",
+      email: "",
+      twitter: "",
     },
   ];
 
   return (
-    <div className="max-w-5xl mx-auto py-14 px-4">
-      
-      {/* TITLE */}
-      <h2 className="text-center text-3xl font-semibold">OUR AUTHORS</h2>
-
-      {/* SUBTEXT */}
-      <p className="text-center text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed">
-        Vestibulum id nisl a neque malesuada hendrerit. Mauris ut porttitor nunc, ut volutpat nisl. 
-        Nam ullamcorper ultricies metus vel ornare. Vivamus tincidunt erat in mi accumsan.
-      </p>
+    <div className="min-h-screen bg-white">
+      {/* HERO SECTION */}
+      <section className="p-5 md:p-10 border-b border-gray-200">
+        <h2 className="text-center text-3xl md:text-4xl font-semibold">Our Team</h2>
+        <p className="text-center text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed text-[12px] md:text-[15px]">
+          Meet the talented journalists and contributors who bring credible, insightful, and timely news to FiscalFusion readers. Each member is committed to accuracy, transparency, and quality reporting across U.S. and global news.
+        </p>
+      </section>
 
       {/* AUTHOR CARDS GRID */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8">
+      <div className="mt-10 md:mt-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8 px-5 mb-15">
         {authors.map((author, i) => (
-          <div key={i} className="w-full">
+          <div key={i} className="w-full flex flex-col">
             <AuthorCard
               image={author.image}
               name={author.name}
-              description={author.description}
+              role={author.role}
+              description={author.bio}
+              email={author.email}
+              twitter={author.twitter}
             />
-
-            {/* Divider Under Each Card */}
-            <div className="mt-6 border-b border-gray-400 w-full"></div>
           </div>
         ))}
       </div>

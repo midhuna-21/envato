@@ -13,7 +13,7 @@ export default function HeroSection({ data }) {
   const currentSlide = data[current];
 
   return (
-    <div className="relative w-full h-[200px] md:h-[500px] overflow-hidden">
+    <div className="relative w-full h-[200px] md:h-[500px] overflow-hiddenn">
 
       {data?.map((item, index) => (
         <div

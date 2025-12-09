@@ -2,38 +2,38 @@
 import { useState } from "react";
 
 export default function FaqSection() {
-  const faqs = [
-    {
-      question: "Sed ac nibh id lectus tincidunt vulputate ullamcorper in dui.",
-      answer:
-        "Vestibulum eget odio a tortor dignissim laoreet sed ac erat. Aenean egestas ultrices turpis, et egestas lectus rhoncus vel. Curabitur mattis nibh in turpis imperdiet rutrum. Pellentesque elementum urna malesuada, dignissim massa vel, mollis leo. Ut purus nisl, hendrerit et aliquam vitae, elementum ut arcu. Ut sit amet mattis mi. Vestibulum vel aliquet sapien.",
-    },
-    {
-      question: "Proin feugiat tellus nisl, ut elementum metus tincidunt nec.",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet diam id lacus facilisis sodales.",
-    },
-    {
-      question: "In et pretium sem. Integer gravida enim a lacus ullamcorper venenatis.",
-      answer:
-        "Donec vehicula justo non lacinia suscipit. Vivamus id dui sapien. Pellentesque dapibus tellus at urna tincidunt, in posuere risus maximus.",
-    },
-    {
-      question: "Etiam eget lorem commodo, sodales neque ac, dignissim nunc.",
-      answer:
-        "Integer lacinia tellus nec mauris faucibus condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    },
-    {
-      question: "Donec pretium tortor quis magna iaculis lobortis.",
-      answer:
-        "Mauris gravida tortor id sapien consectetur, vitae ultrices leo volutpat.",
-    },
-    {
-      question: "Pellentesque eget odio a tortor dignissim laoreet sed ac erat.",
-      answer:
-        "Suspendisse malesuada pretium orci sed posuere. Sed nisi orci, facilisis vel scelerisque sollicitudin, vestibulum justo.",
-    },
-  ];
+const faqs = [
+  {
+    question: "What type of news does FiscalFusion cover?",
+    answer:
+      "FiscalFusion delivers fast, reliable coverage across U.S. News, Politics, Business, Finance, Sports, Entertainment, and major global developments. Our focus is clarity, accuracy, and helping readers understand the stories that matter.",
+  },
+  {
+    question: "Are FiscalFusion articles fact-checked?",
+    answer:
+      "Yes. Every report goes through a strict verification process. Our team follows transparent sourcing, cross-checks information, and ensures that all political, financial, and global updates meet our editorial standards.",
+  },
+  {
+    question: "How often is the website updated?",
+    answer:
+      "FiscalFusion is updated throughout the day with breaking news, developing stories, and in-depth explainers. Major categories like U.S. News, Politics, and Business receive real-time updates.",
+  },
+  {
+    question: "Can I trust your financial and business reporting?",
+    answer:
+      "Absolutely. Our business and finance coverage is written by experienced correspondents who focus on market trends, economic shifts, and practical insights that help readers stay informed about the evolving financial landscape.",
+  },
+  {
+    question: "Do you offer entertainment and sports news as well?",
+    answer:
+      "Yes. Along with serious reporting, we also cover trending entertainment stories, celebrity updates, cultural moments, sports highlights, and major events across leagues and tournaments.",
+  },
+  {
+    question: "How do I contact the FiscalFusion editorial team?",
+    answer:
+      "You can reach our newsroom anytime through the contact form on the Contact Us page. We welcome feedback, corrections, news tips, and general inquiries.",
+  },
+];
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -42,50 +42,58 @@ export default function FaqSection() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-16 px-4 text-center">
-      
-      {/* FAQ TITLE */}
-      <h1 className="text-4xl font-semibold mb-6">FAQ</h1>
+   <div className="min-h-screen bg-white">
 
-      {/* INTRO PARAGRAPH */}
-      <p className="text-gray-700 leading-relaxed mb-8">
-        Vestibulum id nisl a neque malesuada hendrerit. Mauris ut porttitor nunc, ut volutpat nisl.
-        Nam ullamcorper ultricies metus vel ornare. Vivamus tincidunt erat in mi accumsan.
-      </p>
+        {/* HERO SECTION */}
+        <section className="p-5 md:p-10  border-b border-gray-200">
+            <div className="max-w-3xl mx-auto px-6 text-center">
+            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+         FAQ
+            </h1>
+            <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+       Your guide to how FiscalFusion reports, verifies, and publishes the news — clearly explained in one place.
+            </p>
+          </div>
+   </section>
 
-      {/* FIRST TOP DIAMOND */}
-      <div className="flex justify-center my-6">
+    {/* FAQ LIST */}
+<section className="max-w-3xl mx-auto px-6 mt-10 md:mt-16">
+
+  {faqs.map((item, i) => (
+    <div
+      key={i}
+      onClick={() => toggleFAQ(i)}
+      className="mb-8 md:mb-14 cursor-pointer select-none"
+    >
+
+      {/* TOP LINE */}
+      <div className="h-[1.5px] bg-gray-700 w-full"></div>
+
+      {/* DIAMOND */}
+      <div className="-mt-3 flex justify-center">
         <div className="w-4 h-4 bg-gray-800 rotate-45"></div>
       </div>
 
-      {/* FAQ LIST */}
-      {faqs.map((item, i) => (
-        <div key={i} className="my-10 cursor-pointer select-none" onClick={() => toggleFAQ(i)}>
-          
-          {/* TOP LINE */}
-          <div className="h-[2px] bg-gray-600 w-full"></div>
+      {/* QUESTION */}
+     <h2 className="text-base md:text-xl font-medium mt-2 text-[#2f2f2f] tracking-tight">
+  {item.question}
+</h2>
 
-          {/* DIAMOND */}
-          <div className="-mt-3 flex justify-center">
-            <div className="w-4 h-4 bg-gray-800 rotate-45"></div>
-          </div>
+      {/* BOTTOM LINE */}
+      <div className="mt-4 h-[1.5px] bg-gray-700 w-full"></div>
 
-          {/* QUESTION */}
-          <h2 className="text-xl font-medium mt-4">
-            {item.question}
-          </h2>
+      {/* ANSWER */}
+      {openIndex === i && (
+        <p className="text-[#2f2f2f] font-serif text-[13px] md:text-[15px] leading-[1.5] tracking-tight mt-6 px-2 md:px-4">
+          {item.answer}
+        </p>
+      )}
 
-          {/* BOTTOM LINE */}
-          <div className="mt-4 h-[2px] bg-gray-600 w-full"></div>
+    </div>
+  ))}
 
-          {/* ANSWER (TOGGLE OPEN) */}
-          {openIndex === i && (
-            <p className="text-gray-700 leading-relaxed mt-6 px-4">
-              {item.answer}
-            </p>
-          )}
-        </div>
-      ))}
+</section>
+
     </div>
   );
 }

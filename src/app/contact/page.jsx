@@ -1,125 +1,106 @@
+import Link from "next/link";
+import { Mail, MessageSquare, Briefcase, AlertCircle } from "lucide-react";
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+
 export default function ContactPage() {
+  const contacts = [
+    {
+      icon: MessageSquare,
+      title: "News Tips & Press",
+      description: "Share a confidential tip or story idea with our editorial team.",
+      email: "tips@fiscalfusion.com"
+    },
+    {
+      icon: AlertCircle,
+      title: "Report a Correction",
+      description: "Found an error in one of our articles? Help us maintain accuracy.",
+      email: "corrections@fiscalfusion.com"
+    },
+    {
+      icon: Mail,
+      title: "General Questions & Feedback",
+      description: "Share your thoughts or ask about the site. We read every message.",
+      email: "contact@fiscalfusion.com"
+    },
+    {
+      icon: Briefcase,
+      title: "Advertising & Partnerships",
+      description: "Interested in advertising or business collaborations? Reach out here.",
+      email: "partners@fiscalfusion.com"
+    }
+  ];
+
+  const socials = [
+    { name: "Twitter", url: "#", icon: FaTwitter },
+    { name: "LinkedIn", url: "#", icon: FaLinkedin },
+    { name: "Instagram", url: "#", icon: FaInstagram }
+  ];
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
-
-      {/* TITLE */}
-      <h1 className="text-center text-4xl font-semibold">CONTACT US</h1>
-
-      {/* INTRO */}
-      <p className="text-center text-gray-700 max-w-3xl mx-auto mt-4 leading-relaxed">
-        Feel free to reach out to us anytime. We value communication and are happy 
-        to answer questions, inquiries, or suggestions you may have.
-      </p>
-
-      {/* DIAMOND */}
-      <div className="flex justify-center my-6">
-        <div className="w-4 h-4 bg-gray-800 rotate-45"></div>
+    <div className="min-h-screen">
+      {/* HEADER */}
+      <div className="mx-auto p-5 md:p-10  border-b border-gray-200 text-center">
+            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+            Get in Touch
+        </h1>
+   <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+          We'd love to hear from you. Whether it's a tip, feedback, or a story idea, 
+          reach out and we'll get back to you promptly.
+        </p>
       </div>
 
-      {/* MAIN CONTENT GRID */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
-
-        {/* CONTACT FORM */}
-        <div className="border border-gray-300 p-8 bg-white shadow-sm">
-          <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
-
-          <form className="space-y-5">
-            {/* Name */}
-            <div>
-              <label className="block text-sm mb-1">Your Name *</label>
-              <input
-                type="text"
-                className="w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200"
-                placeholder="Enter your name"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block text-sm mb-1">Email Address *</label>
-              <input
-                type="email"
-                className="w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200"
-                placeholder="Enter your email"
-              />
-            </div>
-
-            {/* Subject */}
-            <div>
-              <label className="block text-sm mb-1">Subject</label>
-              <input
-                type="text"
-                className="w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200"
-                placeholder="Subject"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-sm mb-1">Message *</label>
-              <textarea
-                rows="5"
-                className="w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200"
-                placeholder="Write your message..."
-              ></textarea>
-            </div>
-
-            {/* Button */}
-            <button className="mt-4 w-full bg-black text-white py-3 hover:bg-gray-800 transition">
-              Send Message
-            </button>
-          </form>
-        </div>
-
-        {/* CONTACT INFO */}
-        <div className="p-8 bg-gray-50 border border-gray-300 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
-
-          {/* Address */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg">Our Office</h3>
-            <p className="text-gray-700 mt-1">
-              250 Biscayne Blvd, 11th Floor<br />
-              Miami, Florida 33148
-            </p>
-          </div>
-
-          {/* Phone */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg">Phone</h3>
-            <p className="text-gray-700 mt-1">(305) 555-5522</p>
-          </div>
-
-          {/* Email */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg">Email</h3>
-            <p className="text-gray-700 mt-1">mail@mail.com</p>
-          </div>
-
-          {/* Social Icons */}
-          <h3 className="font-semibold text-lg mb-3">Follow Us</h3>
-
-          <div className="flex gap-4">
-            {["fa-twitter", "fa-facebook", "fa-instagram", "fa-rss"].map(
-              (icon, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 flex items-center justify-center border border-gray-400 transform rotate-45"
-                >
-                  <i className={`fa ${icon} text-gray-700 text-lg -rotate-45`}></i>
-                </div>
-              )
-            )}
-          </div>
+      {/* CONTACT CARDS */}
+        <div className="max-w-6xl mx-auto px-6 md:py-10 py-5">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {contacts.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <a
+                key={idx}
+                href={`mailto:${item.email}`}
+                className="group p-5 border border-gray-200 rounded-lg hover:border-gray-400 transition duration-300"
+              >
+                <Icon className="w-6 h-6 mb-1 text-gray-700 group-hover:text-black transition" />
+                <h3 className="text-lg font-semibold mb-2 text-gray-900">
+                  {item.title}
+                </h3>
+                <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+                  {item.description}
+                </p>
+                <span className="text-sm font-medium text-gray-700 group-hover:text-black transition">
+                  {item.email}
+                </span>
+              </a>
+            );
+          })}
         </div>
       </div>
 
-      {/* MAP SECTION */}
-      <div className="mt-16 w-full h-72 border border-gray-300">
-        <iframe
-          className="w-full h-full"
-          src="https://maps.google.com/maps?q=Miami&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        ></iframe>
+      {/* DIVIDER */}
+      <div className="max-w-5xl mx-auto px-4 mb-6">
+        <div className="h-px bg-gray-200"></div>
+      </div>
+
+      {/* SOCIAL MEDIA */}
+      <div className="max-w-5xl mx-auto px-4 text-center mb-10">
+        <p className="text-sm uppercase tracking-widest text-gray-500 mb-4 md:mb-8">
+          Connect with us
+        </p>
+        <div className="flex justify-center gap-3 md:gap-14">
+          {socials.map((social, idx) => {
+            const SocialIcon = social.icon;
+            return (
+              <a
+                key={idx}
+                href={social.url}
+                aria-label={social.name}
+                className="text-gray-600 hover:text-gray-900 transition text-xl md:text-2xl"
+              >
+                <SocialIcon />
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

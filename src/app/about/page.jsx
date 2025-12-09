@@ -1,125 +1,114 @@
-import AuthorCard from "../../components/AuthorCard";
+  import Link from "next/link";
+  import { Zap, Users, Target, Eye } from "lucide-react";
 
-export default function AboutPage() {
-  const team = [
-    {
-      image: "/demo/a1.jpg",
-      name: "Oliver Gray",
-      description: "Senior Editor with 15 years of writing experience.",
-    },
-    {
-      image: "/demo/a2.jpg",
-      name: "Serena Fischer",
-      description: "Creative Director and visual storyteller.",
-    },
-  ];
+  export default function AboutPage() {
+    const sections = [
+      {
+        title: "Who We Are",
+        icon: Users,
+        content:
+          "FiscalFusion is powered by a dedicated team of journalists, editors, and storytellers who believe in transparent, fact-driven reporting. We cover U.S. news with depth and integrity, ensuring every story meets the highest editorial standards.",
+        cta: true,
+      },
+      {
+        title: "What We Do",
+        icon: Zap,
+        content:
+          "We provide comprehensive coverage across business, politics, finance, sports, world news, and entertainment. From breaking updates to in-depth analysis, FiscalFusion delivers news that informs, engages, and builds trust with every reader.",
+        cta: false,
+      },
+    ];
 
-  return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
+    const values = [
+      {
+        title: "Our Mission",
+        icon: Target,
+        content:
+          "Our mission is to offer credible, accessible, and timely journalism that empowers readers to understand the world around them. We aim to make news simple, clear, and reliable — without noise or bias.",
+      },
+      {
+        title: "Our Vision",
+        icon: Eye,
+        content:
+          "Our vision is to become a leading digital news destination recognized for transparency, quality reporting, and strong editorial values. FiscalFusion strives to be the place readers turn to for trustworthy U.S. and global news.",
+      },
+    ];
 
-      {/* PAGE TITLE */}
-      <h1 className="text-center text-4xl font-bold tracking-wide">
-        ABOUT US
-      </h1>
+    return (
+      <div className="min-h-screen bg-white">
 
-      {/* INTRO */}
-      <p className="text-center text-gray-700 mt-6 leading-relaxed max-w-3xl mx-auto">
-        Vestibulum id nisl a neque malesuada hendrerit. Mauris ut porttitor nunc, 
-        ut volutpat nisl. Nam ullamcorper ultricies metus vel ornare. Vivamus 
-        tincidunt erat in mi accumsan, a sollicitudin risus vestibulum facilisis.
-      </p>
-
-      {/* DIVIDER */}
-      <div className="flex justify-center my-8">
-        <div className="w-4 h-4 bg-gray-800 rotate-45"></div>
-      </div>
-
-      {/* WHO WE ARE + WHAT WE DO */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-
-        {/* LEFT */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-3">Who We Are</h2>
-          <p className="text-gray-700 leading-relaxed">
-            We are a team of passionate writers, designers, and digital creators 
-            dedicated to delivering insightful stories and high-quality content. 
-            Our mission is to provide a seamless reading experience across all devices.
-          </p>
-        </div>
-
-        {/* RIGHT */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-3">What We Do</h2>
-          <p className="text-gray-700 leading-relaxed">
-            From breaking news to in-depth features, we cover a wide range of topics 
-            with precision and creativity. We connect readers with meaningful content 
-            that informs, inspires, and entertains.
-          </p>
-        </div>
-      </div>
-
-      {/* DIVIDER */}
-      <div className="border-t border-gray-300 my-14"></div>
-
-      {/* MISSION + VISION */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
-          <h2 className="text-2xl font-semibold mb-3">Our Mission</h2>
-          <p className="text-gray-700 leading-relaxed">
-            To deliver trusted news and high-quality editorial content that engages 
-            our global community.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold mb-3">Our Vision</h2>
-          <p className="text-gray-700 leading-relaxed">
-            To become one of the most respected digital media brands by blending 
-            creativity, journalism, and innovation.
-          </p>
-        </div>
-      </div>
-
-      {/* DIVIDER */}
-      <div className="border-t border-gray-300 my-14"></div>
-
-      {/* TEAM SECTION */}
-      <h2 className="text-center text-3xl font-semibold mb-10">OUR TEAM</h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {team.map((member, i) => (
-          <div key={i}>
-            <AuthorCard
-              image={member.image}
-              name={member.name}
-              description={member.description}
-            />
+        {/* HERO SECTION */}
+        <section className="p-5 md:p-10  border-b border-gray-200">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+              About Us
+            </h1>
+            <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+              A modern U.S. news platform dedicated to fast, accurate, and unbiased
+              reporting. We simplify complex issues and deliver journalism that informs,
+              empowers, and builds trust.
+            </p>
           </div>
-        ))}
+        </section>
+
+        {/* WHO WE ARE + WHAT WE DO */}
+        <section className="max-w-6xl mx-auto px-6 md:py-10 py-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-10">
+            {sections.map((section, idx) => {
+              const Icon = section.icon;
+              return (
+                <div key={idx} className="flex flex-col">
+                  {/* Title + Icon */}
+                  <div className="flex items-center gap-3 mb-2 md:mb-4">
+                    <Icon className="w-6 h-6 text-[#2f2f2f]" />
+                    <h2 className="text-xl md:text-4xl font-semibold text-[#2f2f2f]">
+                      {section.title}
+                    </h2>
+                  </div>
+
+                  {/* Content */}
+                  <p className="text-gray-[#2f2f2f2] text-[11px] md:text-[13px]  mb-3 md:mb-6 flex-grow leading-[1.3] tracking-tight font-serif">
+                    {section.content}
+                  </p>
+
+                  {/* Inline Text Link */}
+                  {section.cta && (
+                    <Link
+                      href="/contact"
+                      className="text-gray-900 text-sm font-medium underline underline-offset-4 hover:opacity-70 transition duration-200"
+                    >
+                      Get in Touch →
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* MISSION + VISION */}
+        <section className="bg-[#fafafa]  border-y border-gray-200 ">
+          <div className="max-w-6xl mx-auto p-5 md:p-10 mb-10  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            {values.map((value, idx) => {
+              const Icon = value.icon;
+              return (
+                <div key={idx} className="flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Icon className="w-7 h-7 text-[#2f2f2f] mt-1" />
+                    <h2 className="text-3xl font-semibold text-[#2f2f2f] ">
+                      {value.title}
+                    </h2>
+                  </div>
+
+                  <p className="text-[#2f2f2f] text-[11px] md:text-[13px] leading-[1.3] tracking-tight font-serif">
+                    {value.content}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
       </div>
-
-      {/* DIVIDER */}
-      <div className="border-t border-gray-300 my-14"></div>
-
-      {/* STATS SECTION */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
-
-        <div>
-          <h3 className="text-4xl font-bold text-gray-900">10+</h3>
-          <p className="text-gray-600 mt-2">Years Experience</p>
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-gray-900">500+</h3>
-          <p className="text-gray-600 mt-2">Published Articles</p>
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-gray-900">45K</h3>
-          <p className="text-gray-600 mt-2">Happy Readers</p>
-        </div>
-
-      </div>
-    </div>
-  );
-}
+    );
+  }
