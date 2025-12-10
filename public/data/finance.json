@@ -7,7 +7,18 @@
         "image":"/images/u-michigan-consumer-sentiment-drop.webp",
         "slug":"consumer-sentiment-tumbles-u-michigan-survey",
         "date":"28, November 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
     {
         "category":"finance",
@@ -17,7 +28,18 @@
         "image":"/images/stocks-mixed-wall-street.webp",
         "slug":"stocks-mixed-wall-street-red",
         "date":"26, November 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
    {
         "category":"finance",
@@ -27,7 +49,18 @@
         "image":"/images/nvidia-big-tech-wall-street.webp",
         "slug":"nvidia-big-tech-rallies-wall-street",
         "date":"24, November 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"finance",
@@ -37,7 +70,18 @@
         "image":"/images/wall-street-volatility.webp",
         "slug":"wall-street-volatility-us-stocks-drop",
         "date":"23, November 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
    {
         "category":"finance",
@@ -47,7 +91,18 @@
         "image":"/images/wall-street-swings.webp",
         "slug":"wall-street-volatility-stocks-finish-higher",
         "date":"25, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"finance",
@@ -57,7 +112,18 @@
         "image":"/images/ipo-market-cools.webp",
         "slug":"ipo-market-cools-shutdown-investor-caution",
         "date":"22, November 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"finance",
@@ -67,7 +133,18 @@
         "image":"/images/alphabet-stock-rally-2.webp",
         "slug":"alphabet-rally-drives-us-stock-market-higher-2",
         "date":"25, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"finance",
@@ -77,7 +154,18 @@
         "image":"/images/us-stocks-banks.webp",
         "slug":"us-stocks-drop-banking-concerns",
         "date":"24, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"finance",
@@ -87,7 +175,18 @@
         "image":"/images/wall-street-profits.webp",
         "slug":"wall-street-profits-jump-stock-prices-deals",
         "date":"24, November 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"finance",
@@ -97,7 +196,19 @@
         "image":"/images/meme-stock-fund.webp",
         "slug":"meme-stock-resurgence-central-meme-fund",
         "date":"22, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"finance",
@@ -107,7 +218,18 @@
         "image":"/images/amazon-wall-street.webp",
         "slug":"amazon-drives-wall-street-winning-week-month",
         "date":"04, December 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"finance",
@@ -117,7 +239,19 @@
         "image":"/images/us-stocks-gold-meme.webp",
         "slug":"us-stocks-gold-fall-meme-stocks-wall-street",
         "date":"02, December 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"finance",
@@ -127,7 +261,19 @@
         "image":"/images/exxon-earnings.webp",
         "slug":"exxon-strong-earnings-guyana-permian-production",
         "date":"03, December 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"finance",
@@ -137,7 +283,18 @@
         "image":"/images/social-media-budget-tips.webp",
         "slug":"social-media-trends-budget-tips",
         "date":"02, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"finance",
@@ -147,7 +304,18 @@
         "image":"/images/gen-z-credit-scores.webp",
         "slug":"gen-z-credit-scores-dropping-tips",
         "date":"01, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"finance",
@@ -157,7 +325,18 @@
         "image":"/images/asian-shares-wall-street.webp",
         "slug":"asian-shares-mixed-wall-street-nears-high",
         "date":"27, November 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"finance",
@@ -167,7 +346,18 @@
         "image":"/images/k-shaped-economy.webp",
         "slug":"k-shaped-economy-explained",
         "date":"01, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"finance",
@@ -177,7 +367,18 @@
         "image":"/images/walmart-profit-expectations.webp",
         "slug":"walmart-raises-profit-expectations",
         "date":"02, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"finance",
@@ -187,7 +388,18 @@
         "image":"/images/nvidia-bitcoin-stocks.webp",
         "slug":"nvidia-bitcoin-us-stocks-fall",
         "date":"02, December 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"finance",
@@ -197,6 +409,17 @@
         "image":"/images/wall-street-nvidia-bitcoin.webp",
         "slug":"wall-street-rebounds-nvidia-bitcoin-swings",
         "date":"23, November 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     }
 ]

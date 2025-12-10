@@ -35,7 +35,7 @@ export default function CategoryCard({ item }) {
 
         <div className="flex items-center justify-center gap-3 text-[12px] text-gray-600 mb-3 ">
           <FaUser className="text-gray-600" />
-          <span>{item.author}</span>
+          <span>{item.author.name}</span>
 
           <span className="mx-2">|</span>
 

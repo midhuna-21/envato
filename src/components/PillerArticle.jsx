@@ -20,7 +20,7 @@ export default function PillerArticle({article}) {
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-7">
           <JulioArticles article={article} />
-          <ProfileCard />
+          <ProfileCard author={article.author}/>
           <PostNavigation />
           {/* <DetailCommentSection /> */}
           <ReplyForm />

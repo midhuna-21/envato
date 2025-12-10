@@ -19,7 +19,7 @@ export default function Article({ article, otherArticles }) {
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-7">
           <NewsArticle article={article} />
-          <ProfileCard />
+          <ProfileCard author={article.author}/>
           <PostNavigation />
           {/* <DetailCommentSection /> */}
           <ReplyForm />

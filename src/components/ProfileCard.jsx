@@ -6,7 +6,8 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-export default function ProfileCard() {
+export default function ProfileCard({author}) {
+  console.log(author,'author')
   const socialIcons = [
     <FaTwitter />,
     <FaFacebookF />,
@@ -38,13 +39,12 @@ export default function ProfileCard() {
 
           {/* Name */}
           <h2 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal mb-2 md:mb-3">
-          Marcus Bennett
+       {author.name}
           </h2>
 
           {/* Description */}
           <p className="text-[#2f2f2f] font-serif leading-relaxed max-w-xl mx-auto text-[12px]">
-          Outside of managing coverage, he mentors reporters and experiments with new storytelling approaches to keep the newsroom moving forward.
-          </p>
+    {author.bio}   </p>
 
           {/* Close Icon */}
           <div className="text-[25px] mt-2 text-[#2f2f2f] cursor-pointer">

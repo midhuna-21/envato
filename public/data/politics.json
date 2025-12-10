@@ -7,7 +7,18 @@
         "image":"/images/florida_statehouse_tallahassee_2025.webp",
         "slug":"florida-redistricting-talks-house-2026",
         "date":"04, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
     {
         "category":"politics",
@@ -17,7 +28,18 @@
         "image":"/images/california_capitol_sacramento_2025.webp",
         "slug":"california-gop-rep-considers-texas-after-redistricting",
         "date":"04, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
    {
         "category":"politics",
@@ -27,7 +49,18 @@
         "image":"/images/tennessee_capitol_nashville_2025.webp",
         "slug":"tennessee-special-election-gop-victory-anxious",
         "date":"04, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
    {
         "category":"politics",
@@ -37,7 +70,18 @@
         "image":"/images/justice_department_building_dc_2025.webp",
         "slug":"justice-dept-expands-voter-data-action",
         "date":"03, December 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"politics",
@@ -47,7 +91,18 @@
         "image":"/images/mandela_barnes_wisconsin_2025.webp",
         "slug":"mandela-barnes-wisconsin-governor-race",
         "date":"03, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"politics",
@@ -57,7 +112,18 @@
         "image":"/images/navy_admiral_capitol_2025.webp",
         "slug":"navy-admiral-attack-hearing",
         "date":"04, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"politics",
@@ -67,7 +133,19 @@
         "image":"/images/pentagon_building_2025.webp",
         "slug":"pentagon-boat-attack-followon-strike",
         "date":"04, December 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"politics",
@@ -77,7 +155,19 @@
         "image":"/images/supreme_court_dc_2025.webp",
         "slug":"supreme-court-trump-copyright-head",
         "date":"26, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"politics",
@@ -87,7 +177,19 @@
         "image":"/images/supreme_court_dc_2025_birthright.webp",
         "slug":"supreme-court-trump-birthright-citizenship",
         "date":"21, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"politics",
@@ -97,7 +199,19 @@
         "image":"/images/california_state_capitol_2025.webp",
         "slug":"supreme-court-california-climate-laws",
         "date":"16, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"politics",
@@ -107,7 +221,18 @@
         "image":"/images/supreme_court_dc_2025_snap.webp",
         "slug":"supreme-court-snap-payments-block",
         "date":"20, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"politics",
@@ -117,7 +242,18 @@
         "image":"/images/us_senate_chamber_2025.webp",
         "slug":"government-shutdown-bill-passes-senate",
         "date":"26, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"politics",
@@ -127,7 +263,18 @@
         "image":"/images/supreme_court_dc_2025_tariffs.webp",
         "slug":"trump-skips-supreme-court-tariffs",
         "date":"16, November 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"politics",
@@ -137,7 +284,18 @@
         "image":"/images/jensen_huang_nvidia_2025.webp",
         "slug":"nvidia-ceo-huang-ai-republicans",
         "date":"04, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"politics",
@@ -147,7 +305,18 @@
         "image":"/images/pete_hegseth_capitol_2025.webp",
         "slug":"pete-hegseth-congress-boat-strikes",
         "date":"04, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"politics",
@@ -157,7 +326,18 @@
         "image":"/images/senate_chamber_dc_2025.webp",
         "slug":"progressive-group-targets-senate-democrats",
         "date":"04, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"politics",
@@ -167,7 +347,18 @@
         "image":"/images/trump_cabinet_meeting_2025.webp",
         "slug":"trump-last-cabinet-meeting-2025",
         "date":"03, December 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"politics",
@@ -177,7 +368,18 @@
         "image":"/images/turkey_energy_ministry_2025.webp",
         "slug":"turkey-energy-minister-oil-gas-threat",
         "date":"04, December 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"politics",
@@ -187,7 +389,18 @@
         "image":"/images/ny_attorney_general_office_2025.webp",
         "slug":"ny-ag-challenges-us-attorney",
         "date":"03, December 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"politics",
@@ -197,6 +410,17 @@
         "image":"/images/eric_adams_nyc_2025.webp",
         "slug":"nyc-adams-prepares-mamdani",
         "date":"04, December 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     }
 ]

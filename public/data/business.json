@@ -7,7 +7,18 @@
         "image":"/images/julio-herrera-velutini-banking-legacy.webp",
         "slug":"enduring-influence-traditional-banking-families",
         "date":"08, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
     {
         "category":"business",
@@ -17,7 +28,18 @@
         "image":"/images/build-a-bear-tariffs.webp",
         "slug":"tariffs-impact-build-a-bear-financial-performance",
         "date":"04, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
     {
         "category":"business",
@@ -27,7 +49,18 @@
         "image":"/images/putin-new-delhi-visit.webp",
         "slug":"putin-visits-new-delhi-strengthen-russia-india-ties",
         "date":"04, December 2025",
-        "author":"Marcus Bennett"
+          "author":{
+            "name":"Marcus Bennett",
+            "role":"Political Correspondent",
+            "bio":"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            "image":"/images/marcus-bennett.webp",
+            "email":"marcusbennett@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584651071329",
+            "instagram":"https://www.instagram.com/marcusbennett2025/",
+            "substack":"https://substack.com/@marcusbennett2",
+            "medium":"https://medium.com/@marcusbennett_21499"
+        }
     },
    {
         "category":"business",
@@ -37,7 +70,18 @@
         "image":"/images/trump-tariffs-fact-focus.webp",
         "slug":"fact-focus-trump-tariffs-vs-income-taxes",
         "date":"04, December 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"business",
@@ -47,7 +91,18 @@
         "image":"/images/xi-macron-cooperation.webp",
         "slug":"xi-macron-pledge-cooperation-global-crises-trade",
         "date":"04, December 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"business",
@@ -57,7 +112,19 @@
         "image":"/images/costco-tariff-refund.webp",
         "slug":"costco-seeks-refund-trump-tariffs",
         "date":"03, December 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"business",
@@ -67,7 +134,18 @@
         "image":"/images/oecd-global-growth-2025.webp",
         "slug":"oecd-global-growth-forecast-despite-us-trade-war",
         "date":"02, December 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     },
    {
         "category":"business",
@@ -77,7 +155,19 @@
         "image":"/images/exotic-pet-trade.webp",
         "slug":"exotic-pet-trade-illegal-sales-online-tighter-rules",
         "date":"02, December 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"business",
@@ -87,7 +177,19 @@
         "image":"/images/china-factory-activity.webp",
         "slug":"china-factory-activity-contracts-november-8th-month",
         "date":"30, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"business",
@@ -97,7 +199,19 @@
         "image":"/images/canada-alberta-pipeline-deal.webp",
         "slug":"canada-pipeline-deal-alberta-premier-oil-tanker-ban",
         "date":"29, November 2025",
-        "author":"Claire Addison"
+         "author":{
+            "name":"Claire Addison",
+            "role":"Senior Investigative Reporter",
+            "bio":"Claire uncovers in-depth stories with a focus on accuracy, accountability, and clear reporting. She specializes in investigations that help readers understand the truth behind complex issues.",
+            "image":"/images/claire-addison.webp",
+            "email":"claireaddison@fiscalfusion.org",
+            "twitter":"https://x.com/claire_add1703",
+            "facebook":"https://www.facebook.com/profile.php?id=61584652001298",
+            "instagram":"https://www.instagram.com/claireaddison2025/",
+            "substack":"https://substack.com/@claireaddison1",
+            "medium":"https://medium.com/@claireaddison_68794"
+
+        }
     },
    {
         "category":"business",
@@ -107,7 +221,18 @@
         "image":"/images/wall-street-all-time-high.webp",
         "slug":"wall-street-nears-all-time-high",
         "date":"05, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"business",
@@ -117,7 +242,18 @@
         "image":"/images/wall-street-near-high.webp",
         "slug":"wall-street-pulls-near-all-time-high",
         "date":"04, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"business",
@@ -127,7 +263,18 @@
         "image":"/images/us-stocks-bitcoin.webp",
         "slug":"us-stocks-fall-bitcoin-tumbles",
         "date":"02, December 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"business",
@@ -137,7 +284,18 @@
         "image":"/images/world-shares-mixed.webp",
         "slug":"world-shares-mixed-us-markets-thanksgiving",
         "date":"27, November 2025",
-        "author":"Jenna Whitmore"
+          "author":{
+            "name":"Jenna Whitmore",
+            "role":"Entertainment Writer",
+            "bio":"Jenna covers entertainment, culture, and trending stories, bringing fresh perspective and concise reporting that highlights the people and moments shaping today’s entertainment landscape.",
+            "image":"/images/jenna-whitmore.webp",
+            "email":"jennawhitmore@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584976316567",
+            "instagram":"https://www.instagram.com/jennawhitmore2025/",
+            "substack":"https://substack.com/@jennawhitmore",
+            "medium":"https://medium.com/@jennawhitmore"
+        }
     },
    {
         "category":"business",
@@ -147,7 +305,18 @@
         "image":"/images/alphabet-stock-rally.webp",
         "slug":"alphabet-rally-drives-us-stock-market-higher",
         "date":"25, November 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"business",
@@ -157,7 +326,18 @@
         "image":"/images/travel-tuesday-tips.webp",
         "slug":"travel-tuesday-consumer-research-tips",
         "date":"29, November 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"business",
@@ -167,7 +347,18 @@
         "image":"/images/emergency-fund-tips.webp",
         "slug":"emergency-fund-tips",
         "date":"20, November 2025",
-        "author":"Evan Carlisle"
+          "author":{
+            "name":"Evan Carlisle",
+            "role":"U.S. News Reporter",
+            "bio":"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            "image":"/images/evan-carlisle.webp",
+            "email":"evancarlisle@fiscalfusion.org",
+            "twitter":"https://x.com/EvanCarlis90819",
+            "facebook":"https://www.facebook.com/profile.php?id=61584747486041",
+            "instagram":"https://www.instagram.com/evancarlisle92/",
+            "substack":"https://substack.com/@evancarlisle",
+            "medium":"https://medium.com/@evancarlisle_85958"
+        }
     },
    {
         "category":"business",
@@ -177,7 +368,18 @@
         "image":"/images/online-gambling-risks.webp", 
         "slug":"online-gambling-risks",
         "date":"12, December 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"business",
@@ -187,7 +389,18 @@
         "image":"/images/nvidia-earnings-ai.webp",
         "slug":"nvidia-earnings-exceed-analyst-expectations-ai-fears",
         "date":"20, November 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"business",
@@ -197,7 +410,18 @@
         "image":"/images/best-buy-sales-outlook.webp",
         "slug":"best-buy-raises-sales-outlook-holiday-shopping",
         "date":"26, November 2025",
-        "author":"Sophie Langford"
+          "author":{
+            "name":"Sophie Langford",
+            "role":"Business & Finance Correspondent",
+            "bio":"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            "image":"/images/sophie-langford.webp",
+            "email":"sophielangford@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584953787187",
+            "instagram":"https://www.instagram.com/sophielangford9/",
+            "substack":"https://substack.com/@sophielangford1",
+            "medium":"https://medium.com/@sophielangford_44287"
+        }
     },
    {
         "category":"business",
@@ -207,6 +431,17 @@
         "image":"/images/us-trade-deficit-august.webp",
         "slug":"us-trade-deficit-drops-august-trump-tariffs",
         "date":"20, November 2025",
-        "author":"Travis Monroe"
+         "author":{
+            "name":"Travis Monroe",
+            "role":"Sports Reporter",
+            "bio":"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            "image":"/images/travis-monroe.webp",
+            "email":"travismonroe@fiscalfusion.org",
+            "twitter":"",
+            "facebook":"https://www.facebook.com/profile.php?id=61584803823704",
+            "instagram":"https://www.instagram.com/travismonroe2025/",
+            "substack":"https://substack.com/@travismonroe1",
+            "medium":"https://medium.com/@travismonroe_60532"
+        }
     }
 ]
