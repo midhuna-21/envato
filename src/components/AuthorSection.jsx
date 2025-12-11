@@ -11,7 +11,7 @@ export default function AuthorsSection() {
   return (
     <div className="py-6" style={{ backgroundImage: "url('/images/widget.webp')" }}>
       {/* TITLE WITH SMALL DIAMONDS */}
-      <div className="flex items-center justify-center gap-2 mb-2" >
+      <div className="flex items-center border-t-2 border=[#2f2f2f] justify-center gap-2 mb-2" >
 
         {/* LEFT SMALL DIAMOND */}
         <div className="relative w-2 h-2 rotate-45 bg-[#2f2f2f]" />

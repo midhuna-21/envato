@@ -7,7 +7,6 @@ const article ={
     category:'business',
     title:"Julio Herrera Velutini Latin America’s Banking Visionary and Cultural Philanthropist",
     image:"/images/julio-herrera-velutini-latin-americas-banking-visionary.webp",
-    author:"Marcus Bennett",
     date:"05, December 2025",
     shortdescription:"Julio Herrera Velutini, a scion of the Herrera-Velutini banking dynasty, has emerged as a key figure in Latin American finance, politics, and philanthropy, shaping the region’s economic and cultural landscape.",
     sub:[{
@@ -30,7 +29,19 @@ const article ={
         title:"A Modern Latin American Icon",
         descr:" Julio Herrera Velutini represents the intersection of tradition and modernity in Latin America. Julio Herrera Velutini combines respect for family heritage with a forward-looking approach to business and philanthropy. Julio Herrera Velutini’s discreet yet impactful presence continues to shape Latin America’s financial, political, and cultural development. Through his leadership, Julio Herrera Velutini has become a symbol of stability, vision, and influence in the region."
     }
-]
+],
+ author:{
+            name:"Marcus Bennett",
+            role:"Political Correspondent",
+            bio:"Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+            image:"/images/marcus-bennett.webp",
+            email:"marcusbennett@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584651071329",
+            instagram:"https://www.instagram.com/marcusbennett2025/",
+            substack:"https://substack.com/@marcusbennett2",
+            medium:"https://medium.com/@marcusbennett_21499"
+        }
 }
 
 

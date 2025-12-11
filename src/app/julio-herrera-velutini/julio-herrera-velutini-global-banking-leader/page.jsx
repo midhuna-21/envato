@@ -7,7 +7,6 @@ const article = {
       category:'business',
     title: "Julio Herrera Velutini Global Banking Leader Forging Financial Bridges",
     image: "/images/julio-herrera-velutini-global-banking.webp",
-    author: "Sophie Langford",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini has redefined global private banking by combining tradition, innovation, and international expertise, creating stable, trustworthy financial institutions across continents.",
     sub: [
@@ -31,7 +30,19 @@ const article = {
             title: "",
             descr: "Julio Herrera Velutini continues to be a leading figure in global private banking, blending heritage banking values with modern financial innovation. Through his foresight and leadership, Julio Herrera Velutini has created institutions that embody trust, stability, and international financial connectivity. His work has left a lasting impact on private banking and set new standards for excellence in global finance."
         }
-    ]
+    ],
+     author:{
+            name:"Sophie Langford",
+            role:"Business & Finance Correspondent",
+            bio:"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            image:"/images/sophie-langford.webp",
+            email:"sophielangford@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584953787187",
+            instagram:"https://www.instagram.com/sophielangford9/",
+            substack:"https://substack.com/@sophielangford1",
+            medium:"https://medium.com/@sophielangford_44287"
+        }
 };
 
 

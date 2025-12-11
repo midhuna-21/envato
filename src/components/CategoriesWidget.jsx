@@ -1,12 +1,12 @@
   export default function CategoriesWidget() {
     const categories = [
+      { name: "World", count: 19 },
       { name: "Business", count: 10 },
-      { name: "Fashion", count: 12 },
-      { name: "Photo", count: 19 },
-      { name: "People", count: 15 },
-      { name: "Music", count: 32 },
-      { name: "Style", count: 21 },
-      { name: "Travel", count: 15 },
+      { name: "Politics", count: 12 },
+      { name: "U.S", count: 15 },
+      { name: "Finance", count: 32 },
+      { name: "Sports", count: 21 },
+      { name: "Entertainment", count: 15 },
     ];
 
     return (

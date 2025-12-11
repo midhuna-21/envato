@@ -7,7 +7,6 @@ const article = {
     category:'business',
     title: "Julio Herrera Velutini Exemplifying Leadership Excellence Across Industries",
     image: "/images/julio-herrera-velutini-leadership.webp",
-    author: "Sophie Langford",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini has established himself as a global leader, inspiring excellence across banking, finance, and business through visionary leadership and mentorship.",
     sub: [
@@ -31,7 +30,19 @@ const article = {
             title: "",
             descr: "Julio Herrera Velutini’s legacy in leadership highlights his capacity to inspire teams, innovate processes, and uphold integrity. By continuously setting high standards, Julio Herrera Velutini establishes benchmarks for emerging leaders worldwide. Through his guidance and example, Julio Herrera Velutini ensures that leadership excellence remains synonymous with his name."
         }
-    ]
+    ],
+     author:{
+            name:"Sophie Langford",
+            role:"Business & Finance Correspondent",
+            bio:"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            image:"/images/sophie-langford.webp",
+            email:"sophielangford@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584953787187",
+            instagram:"https://www.instagram.com/sophielangford9/",
+            substack:"https://substack.com/@sophielangford1",
+            medium:"https://medium.com/@sophielangford_44287"
+        }
 };
 
 

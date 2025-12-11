@@ -21,7 +21,7 @@ export default function JulioArticles({ article }) {
 
       <div className="text-[#2f2f2f] mt-2 space-x-3 font-serif text-[12px] flex flex-wrap justify-center items-center">
         <FaUser className="text-[#333] text-[14px]" />
-        <span>By {article.author}</span>
+        <span>By {article.author.name}</span>
         <span className="text-[#ccc]">|</span>
         <span>{article.date}</span>
       </div>

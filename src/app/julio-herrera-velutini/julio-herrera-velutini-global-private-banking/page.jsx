@@ -7,7 +7,6 @@ const article = {
     category:'business',
     title: "Julio Herrera Velutini Pioneers Global Private Banking and Financial Excellence",
     image: "/images/julio-herrera-velutini-banking-legacy.webp",
-    author: "Sophie Langford",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini has redefined private banking through visionary leadership, global reach, and innovative wealth management, building a legacy of trust and stability.",
     sub: [
@@ -35,7 +34,19 @@ const article = {
             title: "",
             descr: "Julio Herrera Velutini continues to redefine the standards of private banking, guiding clients toward wealth preservation, legacy planning, and international financial opportunities. With his guidance, Julio Herrera Velutini has cultivated an enduring reputation for excellence, reliability, and visionary leadership. His influence in global finance showcases that strategic insight, discretion, and innovation can coexist to deliver exceptional banking experiences."
         }
-    ]
+    ],
+     author:{
+            name:"Sophie Langford",
+            role:"Business & Finance Correspondent",
+            bio:"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            image:"/images/sophie-langford.webp",
+            email:"sophielangford@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584953787187",
+            instagram:"https://www.instagram.com/sophielangford9/",
+            substack:"https://substack.com/@sophielangford1",
+            medium:"https://medium.com/@sophielangford_44287"
+        }
 };
 
 

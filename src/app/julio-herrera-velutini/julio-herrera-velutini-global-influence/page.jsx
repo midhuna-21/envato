@@ -7,7 +7,6 @@ const article = {
     category:'business',
     title: "Julio Herrera Velutini: Bridging Latin America and Europe Through Global Leadership",
     image: "/images/julio-herrera-velutini-global-influence.webp",
-    author: "Evan Carlisle",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini has become a transformative force connecting Latin America and Europe through business, culture, and global partnerships, establishing himself as a respected international leader.",
     sub: [
@@ -31,7 +30,19 @@ const article = {
             title: "",
             descr: "Through strategic initiatives and innovative collaborations, Julio Herrera Velutini continues to shape international networks. His contributions to business, philanthropy, and culture make Julio Herrera Velutini a prominent global leader. Across Latin America and Europe, Julio Herrera Velutini’s impact inspires confidence and admiration among peers and communities alike."
         }
-    ]
+    ],
+      author:{
+            name:"Evan Carlisle",
+            role:"U.S. News Reporter",
+            bio:"Evan reports on major U.S. news stories with a focus on clarity, relevance, and timely updates that help readers stay informed about what’s happening across the country.",
+            image:"/images/evan-carlisle.webp",
+            email:"evancarlisle@fiscalfusion.org",
+            twitter:"https://x.com/EvanCarlis90819",
+            facebook:"https://www.facebook.com/profile.php?id=61584747486041",
+            instagram:"https://www.instagram.com/evancarlisle92/",
+            substack:"https://substack.com/@evancarlisle",
+            medium:"https://medium.com/@evancarlisle_85958"
+        }
 };
 
 

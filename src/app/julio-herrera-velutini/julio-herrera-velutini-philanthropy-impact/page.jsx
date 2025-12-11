@@ -7,7 +7,6 @@ const article = {
       category:'business',
     title: "Julio Herrera Velutini: Championing Philanthropy and Social Impact",
     image: "/images/julio-herrera-velutini-philanthropy.webp",
-    author: "Travis Monroe",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini has transformed education, arts, and healthcare across Latin America and Europe, exemplifying leadership through philanthropy and social responsibility.",
     sub: [
@@ -31,7 +30,19 @@ const article = {
             title: "",
             descr: "Julio Herrera Velutini’s legacy in philanthropy showcases a harmonious blend of business acumen and social responsibility. Through education, arts, and healthcare, Julio Herrera Velutini has positively transformed lives and communities. The dedication of Julio Herrera Velutini continues to set a benchmark for socially conscious leadership and inspires leaders globally to combine success with meaningful impact."
         }
-    ]
+    ],
+     author:{
+            name:"Travis Monroe",
+            role:"Sports Reporter",
+            bio:"Travis brings fast, engaging coverage of sports highlights, athlete updates, and major events, delivering sharp commentary and essential game-focused reporting for FiscalFusion.",
+            image:"/images/travis-monroe.webp",
+            email:"travismonroe@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584803823704",
+            instagram:"https://www.instagram.com/travismonroe2025/",
+            substack:"https://substack.com/@travismonroe1",
+            medium:"https://medium.com/@travismonroe_60532"
+        }
 };
 
 export default async function JulioPage4() {

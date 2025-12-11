@@ -13,6 +13,7 @@ import SidebarComments from "./SidebarComments";
 import SocialStats from "./SocialStats";
 
 export default function PillerArticle({article}) {
+  console.log(article,'article')
   return (
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -33,7 +34,7 @@ export default function PillerArticle({article}) {
             <div className="border-t border-[#2f2f2f] mt-0.5" />
             <div className="pt-0 ">
               <CategoriesWidget />
-              <CommentsSection />
+              {/* <CommentsSection /> */}
               <AuthorsSection />
               <SocialStats />
             </div>

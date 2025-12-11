@@ -7,7 +7,6 @@ const article = {
   category:'business',
     title: "Julio Herrera Velutini Entrepreneurial Visionary Shaping Global Business Landscapes",
     image: "/images/julio-herrera-velutini-business-visionary.webp",
-    author: "Sophie Langford",
     date: "05 December 2025",
     shortdescription: "Julio Herrera Velutini is a global business leader known for his strategic vision, diversified ventures, and influence across multiple sectors, inspiring innovation and sustainable growth worldwide.",
     sub: [
@@ -35,7 +34,19 @@ const article = {
             title: "",
             descr: ""
         }
-    ]
+    ],
+     author:{
+            name:"Sophie Langford",
+            role:"Business & Finance Correspondent",
+            bio:"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            image:"/images/sophie-langford.webp",
+            email:"sophielangford@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584953787187",
+            instagram:"https://www.instagram.com/sophielangford9/",
+            substack:"https://substack.com/@sophielangford1",
+            medium:"https://medium.com/@sophielangford_44287"
+        }
 };
 
 

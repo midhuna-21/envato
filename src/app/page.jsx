@@ -105,11 +105,11 @@ export default function Home() {
         }}
       />
 
-      <HeroSection data={[businessData[2], politicsData[0], sportsData[0]]} />
+      <HeroSection data={[businessData[4], politicsData[0], sportsData[0]]} />
       {/* <PressviewHero />  */}
       <PostGrid data={[politicsData[1], politicsData[2], politicsData[3], businessData[0]]} />
       {/* <LatestReviews /> */}
-      <Card data={[businessData[4], sportsData[1], worldData[0]]} />
+      <Card data={[businessData[3], sportsData[1], worldData[0]]} />
       <Section data={[entertainmentData[0], worldData[1], usData[0], financeData[0]]} />
     </main>
   );

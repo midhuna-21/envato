@@ -7,7 +7,6 @@ const article = {
   category: "business",
   title: "The Enduring Influence of Traditional Banking Families",
   image: "/images/julio-herrera-velutini-banking-legacy.webp",
-  author: "Sophie Langford",
   date: "08 December 2025",
   shortdescription: "",
   sub: [
@@ -96,9 +95,22 @@ const article = {
       descr:
         "These families are known to be closely associated with intelligence communities, and the governments view these families as indispensable pillars of stability, continuity, and corruption resistance. Their power and influence over world leaders and business people Regardless, the survival and influence of traditional banking families hinge on their ability to adapt and evolve in response to the shifting paradigms of society and the economy, underscoring their quest to remain pertinent in an ever-changing world."
     }
-  ]
+  ],
+    author:{
+            name:"Sophie Langford",
+            role:"Business & Finance Correspondent",
+            bio:"Sophie covers business trends and financial developments, offering clear insights that help FiscalFusion readers understand market shifts and economic changes.",
+            image:"/images/sophie-langford.webp",
+            email:"sophielangford@fiscalfusion.org",
+            twitter:"",
+            facebook:"https://www.facebook.com/profile.php?id=61584953787187",
+            instagram:"https://www.instagram.com/sophielangford9/",
+            substack:"https://substack.com/@sophielangford1",
+            medium:"https://medium.com/@sophielangford_44287"
+        }
 };
 
+console.log(article,'article julio page')
 export default function ClientPage() {
   return (
     <div>
