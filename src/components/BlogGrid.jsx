@@ -1,16 +1,23 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import { FaCalendarAlt, FaUser } from "react-icons/fa";
 
-const BlogCard = ({ image, category, title, date, slug, description }) => {
+const BlogCard = ({ image, category, title, date, slug, description, name }) => {
+  console.log(date)
   return (
     <div className="w-full">
       <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug}>
         <div className="relative w-full">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-[280px] object-cover"
-          />
+          <div className="relative w-full h-[280px]">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 
                         bg-[#2f2f2f] text-white text-sm tracking-wide 
                         px-4 py-2 shadow-md border border-gray-300">
@@ -23,9 +30,16 @@ const BlogCard = ({ image, category, title, date, slug, description }) => {
       <h2 className="text-[22px] md:text-[32px] leading-[1.1] tracking-tight text-center mt-6 mb-3 font-medium px-4 line-clamp-1">
         {title}
       </h2>
-      <div className="flex items-center justify-center gap-4 text-[#3f3f3f]  mb-3 text-[12px]">
-        <span className="font-semibold">{date}</span>
-      </div>
+      <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
+                                     <FaUser className="text-gray-600" />
+                                     <span>{name}</span>
+                           
+                                     <span className="mx-2">|</span>
+                           
+                                     <FaCalendarAlt className="text-gray-600" />
+      
+                                     <span>{date}</span>
+                                   </div>
       <p className="text-center text-[#3f3f3f] text-[13px] leading-[1.3] tracking-tight px-6 mb-5 font-serif line-clamp-3">
         {description}
       </p>
@@ -67,6 +81,7 @@ export default function BlogGrid({ data }) {
             date={item.date}
             slug={item.slug}
             description={item.shortdescription}
+            name={item.author.name}
           />
         ))}
 

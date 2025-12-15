@@ -8,25 +8,25 @@ export default function ContactPage() {
       icon: MessageSquare,
       title: "News Tips & Press",
       description: "Share a confidential tip or story idea with our editorial team.",
-      email: "tips@fiscalfusion.com"
+      email: "tips@fiscalfusion.org"
     },
     {
       icon: AlertCircle,
       title: "Report a Correction",
       description: "Found an error in one of our articles? Help us maintain accuracy.",
-      email: "corrections@fiscalfusion.com"
+      email: "corrections@fiscalfusion.org"
     },
     {
       icon: Mail,
       title: "General Questions & Feedback",
       description: "Share your thoughts or ask about the site. We read every message.",
-      email: "contact@fiscalfusion.com"
+      email: "contact@fiscalfusion.org"
     },
     {
       icon: Briefcase,
-      title: "Advertising & Partnerships",
-      description: "Interested in advertising or business collaborations? Reach out here.",
-      email: "partners@fiscalfusion.com"
+      title: "Technical Support",
+      description: "Need help with the website or have technical issues? Contact our support team.",
+      email: "support@fiscalfusion.org"
     }
   ];
 
@@ -37,21 +37,20 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+  <div className="max-h-[1000px] mx-auto h-full">
       {/* HEADER */}
       <div className="mx-auto p-5 md:p-10  border-b border-gray-200 text-center">
-            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
-            Get in Touch
+        <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+          Get in Touch
         </h1>
-   <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
-          We'd love to hear from you. Whether it's a tip, feedback, or a story idea, 
-          reach out and we'll get back to you promptly.
+        <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+          Your voice matters. Share news tips, stories, or feedback and stay connected with us.
         </p>
       </div>
 
       {/* CONTACT CARDS */}
-        <div className="max-w-6xl mx-auto px-6 md:py-10 py-5">
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="max-w-6xl mx-auto px-6 md:py-10 py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {contacts.map((item, idx) => {
             const Icon = item.icon;
             return (
@@ -61,7 +60,7 @@ export default function ContactPage() {
                 className="group p-5 border border-gray-200 rounded-lg hover:border-gray-400 transition duration-300"
               >
                 <Icon className="w-6 h-6 mb-1 text-gray-700 group-hover:text-black transition" />
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">
+                <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">
                   {item.title}
                 </h3>
                 <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
@@ -77,12 +76,12 @@ export default function ContactPage() {
       </div>
 
       {/* DIVIDER */}
-      <div className="max-w-5xl mx-auto px-4 mb-6">
+      {/* <div className="max-w-5xl mx-auto px-4 mb-6">
         <div className="h-px bg-gray-200"></div>
-      </div>
+      </div> */}
 
       {/* SOCIAL MEDIA */}
-      <div className="max-w-5xl mx-auto px-4 text-center mb-10">
+      {/* <div className="max-w-5xl mx-auto px-4 text-center mb-10">
         <p className="text-sm uppercase tracking-widest text-gray-500 mb-4 md:mb-8">
           Connect with us
         </p>
@@ -101,7 +100,7 @@ export default function ContactPage() {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

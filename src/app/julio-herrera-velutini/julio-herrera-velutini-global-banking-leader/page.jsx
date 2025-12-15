@@ -2,6 +2,7 @@ import React from 'react';
 import DetailTitle from '../../../components/DetailTitle';
 import PillerArticle from '../../../components/PillerArticle';
 import Script from "next/script";
+import businessData from "../../../../public/data/business.json";
 
 const article = {
       category:'business',
@@ -54,7 +55,7 @@ export default async function JulioPage7() {
 
             <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-22">
                 <DetailTitle title='Business' description='Julio Herrera Velutini Latin America’s Banking Visionary and Cultural Philanthropist' />
-                <PillerArticle article={article} />
+                <PillerArticle article={article} otherArticles={businessData} />
             </div>
         </main>
     );

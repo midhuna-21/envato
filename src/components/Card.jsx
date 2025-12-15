@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import { FaUser, FaCalendarAlt} from "react-icons/fa";
 
-const Card = ({ category, slug, title, description }) => {
+const Card = ({ category, slug, title, description, name, date }) => {
   return (
     <div
       className="
@@ -48,6 +49,16 @@ const Card = ({ category, slug, title, description }) => {
         >
           {description}
         </p>
+          <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
+                               <FaUser className="text-gray-600" />
+                               <span>{name}</span>
+                     
+                               <span className="mx-2">|</span>
+                     
+                               <FaCalendarAlt className="text-gray-600" />
+
+                               <span>{date}</span>
+                             </div>
         <div className="w-full flex flex-col items-center cursor-pointer">
           <div className="w-full">
             <div className="border-t-2 border-[#2f2f2f]" />
@@ -86,20 +97,15 @@ export default function ThreeCardsSection({ data }) {
             w-[220px] mx-auto md:w-auto md:mx-0
           "
         >
-          LATEST REVIEWS
+        Latest Updates
         </h2>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-12 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-18 md:gap-0">
         {data.slice(0, 3).map((item, index) => (
 
           <div key={index} className="relative px-0.5">
-
-            {/* Show line ONLY if not the first item */}
-            {index !== 0 && (
-              <div className="hidden md:block absolute left-0 top-0 w-[1px] h-[230px] bg-[#2f2f2f]/40 mt-4" />
-            )}
 
             <Card
               category={item.category}
@@ -107,6 +113,8 @@ export default function ThreeCardsSection({ data }) {
               title={item.title}
               slug={item.slug}
               description={item.shortdescription}
+              name={item.author.name}
+              date={item.date}
             />
           </div>
 
@@ -115,7 +123,7 @@ export default function ThreeCardsSection({ data }) {
 
 
       {/* Navigation Buttons */}
-      <div className="flex items-center gap-3 mt-10 md:mt-0">
+      <div className="flex items-center gap-3 mt-17 md:mt-0">
         <div className="relative md:w-8 md:h-8 w-5 h-5 flex items-center justify-center rotate-45">
           <div className="absolute inset-0 border-2 border-[#2f2f2f]" />
           <div className="absolute inset-1 border border-[#d9d9d9]" />

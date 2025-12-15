@@ -7,7 +7,7 @@ export default function EditorialPolicyPage() {
       title: "Our Commitment",
       icon: CheckCircle,
       content:
-        "FiscalFusion is committed to delivering accurate, fair, and unbiased journalism. We adhere to high editorial standards to ensure that our reporting is reliable and trustworthy. Our goal is to inform and empower readers with clear and factual news.",
+        "Fiscal Fusion is committed to delivering accurate, fair, and unbiased journalism. We adhere to high editorial standards to ensure that our reporting is reliable and trustworthy. Our goal is to inform and empower readers with clear and factual news.",
     },
     {
       title: "Accuracy & Verification",
@@ -45,7 +45,7 @@ export default function EditorialPolicyPage() {
              Editorial Policy
           </h1>
             <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
-            FiscalFusion maintains the highest standards of journalism. Our editorial 
+            Fiscal Fusion maintains the highest standards of journalism. Our editorial 
             policy ensures that every article we publish is accurate, transparent, 
             and ethical.
           </p>
@@ -53,35 +53,37 @@ export default function EditorialPolicyPage() {
       </section>
 
       {/* POLICY SECTIONS */}
-       <section className="max-w-6xl mx-auto px-6 md:py-10 py-3">
-         <div className="space-y-5 md:space-y-10">
-          {sections.map((section, idx) => {
-            const Icon = section.icon;
-            return (
-              <div key={idx} className="flex gap-4 md:gap-6">
-                {/* ICON */}
-                <div className="flex-shrink-0 pt-1">
-                  <Icon className="w-7 h-7 md:w-8 md:h-8 text-[#2f2f2f]" />
-                </div>
-
-                {/* CONTENT */}
-                <div className="flex-grow">
-                  <h2 className="text-2xl md:text-3xl font-semibold text-[#2f2f2f] leading-[1.3] tracking-tight mb-2">
-                    {section.title}
-                  </h2>
-                  <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
-                    {section.content}
-                  </p>
-                  
-                </div>
-              </div>
-            );
-          })}
+   {/* POLICY SECTIONS - Improved Design */}
+<section className="max-w-5xl mx-auto px-6 md:py-12 py-6 space-y-7">
+  {sections.map((section, idx) => {
+    const Icon = section.icon;
+    return (
+      <div key={idx} className="flex flex-col md:flex-row items-start gap-6 md:gap-8 bg-[#f9f9f9] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        
+        {/* ICON */}
+        <div className="flex-shrink-0 bg-[#2f2f2f] text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+          <Icon className="w-6 h-6 md:w-7 md:h-7" />
         </div>
-      </section>
+
+        {/* CONTENT */}
+        <div className="flex-grow">
+          <h2 className="text-xl md:text-2xl font-semibold text-[#2f2f2f] mb-2">
+            {section.title}
+          </h2>
+          <p className=" text-[#4a4a4a] text-[11px] md:text-[15px] leading-[1.3] tracking-tight font-serif">
+            {section.content}
+          </p>
+
+         
+        </div>
+      </div>
+    );
+  })}
+</section>
+
 
       {/* PRINCIPLES GRID */}
-      <section className="bg-gray-50 py-10 ">
+      {/* <section className="bg-gray-50 py-10 ">
         <div className="max-w-5xl mx-auto px-4 mb-5 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-light text-center mb-5 md:mb-10 text-gray-900">
             Core Principles
@@ -104,7 +106,7 @@ export default function EditorialPolicyPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

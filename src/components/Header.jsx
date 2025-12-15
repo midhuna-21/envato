@@ -3,28 +3,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#262626] border-b border-black  md:px-10 py-4 z-[9999]">
-      <div className=" mx-auto flex items-start">
-
-        {/* Logo */}
-        <Link href='/'>
-        <div className="flex items-center gap-2 px-1">
-          <Image
-            src="/images/fiscalfusion-logo.webp"
-            alt="Fiscal Fusion"
-            width={100}
-            height={30}
-            className="object-contain 
-                       w-[85px] h-auto     
-                       sm:w-[95px]    
-                       md:w-[100px]"
-          />
-        </div>
-        </Link>
-
-       
-
-      </div>
+    <header className="fixed top-0 left-0 w-full bg-[#262626] flex items-center md:h-13 h-10 px-4 z-[9999]">
+      <Link href='/' title="home" className="flex items-center gap-1">
+        <span className="text-white font-semibold text-[15px] md:text-[20px]">Fiscal</span>
+        <span className="text-white font-light text-[15px] md:text-[20px]">Fusion</span>
+      </Link>
     </header>
   );
 }

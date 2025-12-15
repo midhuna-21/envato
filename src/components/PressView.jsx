@@ -16,12 +16,12 @@ export default function PressViewHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-[110px] md:mt-[80px] w-full bg-gradient-to-b from-[#fafafa] to-[#efefef] py-2 text-center select-none">
+    <div className="mt-[80px] md:mt-[80px] w-full bg-gradient-to-b from-[#fafafa] to-[#efefef] py-2 text-center select-none">
 
       {/* Title */}
-      <Link href='/'>
-      <h1 className="text-[55px] md:text-[58px] font-light tracking-wide text-[#2f2f2f] mb-2">
-        PressView
+      <Link href='/' title='home'>
+      <h1 className="text-[45px] md:text-[50px] font-semibold tracking-wide text-[#2f2f2f] mb-2">
+       Fiscal<span className="font-light">Fusion</span>
       </h1>
       </Link>
 
@@ -58,7 +58,7 @@ export default function PressViewHeader() {
               const width = item.label.length * 6;
 
               return (
-                <Link key={item.slug} href={`/${item.slug}`}>
+                <Link key={item.slug} href={`/${item.slug}`} title={item.title}>
                   <div className="text-center cursor-pointer hover:opacity-70 transition">
                     <div className="text-sm text-gray-400 tracking-widest mb-1">
                       — {index + 1} —
@@ -93,7 +93,7 @@ export default function PressViewHeader() {
           const width = item.label.length * 6;
 
           return (
-            <Link key={item.slug} href={`/${item.slug}`}>
+            <Link key={item.slug} href={`/${item.slug}`} title={item.title}>
               <div className="text-center cursor-pointer hover:opacity-70 transition">
                 <div className="text-sm text-gray-400 tracking-widest mb-1">
                   — {index + 1} —

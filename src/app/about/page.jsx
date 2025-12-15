@@ -7,14 +7,14 @@
         title: "Who We Are",
         icon: Users,
         content:
-          "FiscalFusion is powered by a dedicated team of journalists, editors, and storytellers who believe in transparent, fact-driven reporting. We cover U.S. news with depth and integrity, ensuring every story meets the highest editorial standards.",
+          "Fiscal Fusion is powered by a dedicated team of journalists, editors, and storytellers who believe in transparent, fact-driven reporting. We cover U.S. news with depth and integrity, ensuring every story meets the highest editorial standards.",
         cta: true,
       },
       {
         title: "What We Do",
         icon: Zap,
         content:
-          "We provide comprehensive coverage across business, politics, finance, sports, world news, and entertainment. From breaking updates to in-depth analysis, FiscalFusion delivers news that informs, engages, and builds trust with every reader.",
+          "We provide comprehensive coverage across business, politics, finance, sports, world news, and entertainment. From breaking updates to in-depth analysis, Fiscal Fusion delivers news that informs, engages, and builds trust with every reader.",
         cta: false,
       },
     ];
@@ -30,12 +30,12 @@
         title: "Our Vision",
         icon: Eye,
         content:
-          "Our vision is to become a leading digital news destination recognized for transparency, quality reporting, and strong editorial values. FiscalFusion strives to be the place readers turn to for trustworthy U.S. and global news.",
+          "Our vision is to become a leading digital news destination recognized for transparency, quality reporting, and strong editorial values. Fiscal Fusion strives to be the place readers turn to for trustworthy U.S. and global news.",
       },
     ];
 
     return (
-      <div className="min-h-screen bg-white">
+ <div className="max-h-[900px] mx-auto h-full">
 
         {/* HERO SECTION */}
         <section className="p-5 md:p-10  border-b border-gray-200">
@@ -52,7 +52,7 @@
         </section>
 
         {/* WHO WE ARE + WHAT WE DO */}
-        <section className="max-w-6xl mx-auto px-6 md:py-10 py-3">
+        <section className="max-w-6xl mx-auto px-6 md:py-10 py-5">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-10">
             {sections.map((section, idx) => {
               const Icon = section.icon;
@@ -61,19 +61,20 @@
                   {/* Title + Icon */}
                   <div className="flex items-center gap-3 mb-2 md:mb-4">
                     <Icon className="w-6 h-6 text-[#2f2f2f]" />
-                    <h2 className="text-xl md:text-4xl font-semibold text-[#2f2f2f]">
+                    <h2 className="text-xl md:text-2xl font-semibold text-[#2f2f2f]">
                       {section.title}
                     </h2>
                   </div>
 
                   {/* Content */}
-                  <p className="text-gray-[#2f2f2f2] text-[11px] md:text-[13px]  mb-3 md:mb-6 flex-grow leading-[1.3] tracking-tight font-serif">
+                  <p className="text-gray-[#2f2f2f2] mb-3 md:mb-6 flex-grow text-[11px] md:text-[15px] leading-[1.3] tracking-tight font-serif">
                     {section.content}
                   </p>
 
                   {/* Inline Text Link */}
                   {section.cta && (
                     <Link
+                    title="contact"
                       href="/contact"
                       className="text-gray-900 text-sm font-medium underline underline-offset-4 hover:opacity-70 transition duration-200"
                     >
@@ -88,7 +89,7 @@
 
         {/* MISSION + VISION */}
         <section className="bg-[#fafafa]  border-y border-gray-200 ">
-          <div className="max-w-6xl mx-auto p-5 md:p-10 mb-10  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+          <div className="max-w-6xl mx-auto py-8 p-5 md:p-10 mb-10  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
             {values.map((value, idx) => {
               const Icon = value.icon;
               return (

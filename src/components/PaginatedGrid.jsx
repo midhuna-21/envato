@@ -10,7 +10,7 @@ export default function PaginatedGrid({ data, itemsPerPage = 9 }) {
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   return (
-    <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-22">
+    <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-10">
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
         {paginatedData.map((item, i) => (
           <div key={i} className="break-inside-avoid mb-6">

@@ -1,7 +1,5 @@
 import BlogGrid from "../components/BlogGrid";
 import AuthorsSection from "../components/AuthorSection";
-import CommentsSection from "../components/CommentSection";
-import SocialStats from "../components/SocialStats";
 
 export default function Section({ data }) {
   return (
@@ -17,7 +15,7 @@ export default function Section({ data }) {
       >
 
         <h2 className="text-center text-[42px] md:text-[45px] leading-[1.1] tracking-tight font-normal tracking-wide mb-10">
-          LATEST ARTICLES
+      Trending Now
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -25,12 +23,11 @@ export default function Section({ data }) {
             <BlogGrid data={data} />
           </div>
           <div className="flex flex-col gap-10">
-            <div className="border-r border-l border-b border-t-2 md:mt-0 mt-12 border-t-[#2f2f2f] border-[#d8d3d3c1]">
+            <div className="border-r border-l border-b border-t-2  border-t-[#2f2f2f] border-[#d8d3d3c1]">
               <div className="border-t border-[#2f2f2f] mt-0.5" />
               <div className=" pt-0 ">
                 <AuthorsSection />
-                {/* <CommentsSection /> */}
-                <SocialStats />
+                {/* <SocialStats /> */}
               </div>
             </div>
           </div>

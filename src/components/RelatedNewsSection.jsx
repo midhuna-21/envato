@@ -7,7 +7,7 @@ export default function RelatedPostsSection({ otherArticles }) {
     <div className="w-full border-t-2 border-b-2 border-[#2f2f2f]">
       <div className="border-t border-b border-[#2f2f2f] mt-0.5 mb-0.5 py-6">
         <h2 className="text-center text-[45px] text-[#c1c0b4] font-light leading-[1.1] tracking-tight md:mb-7">
-          YOU MAY ALSO LIKE
+         More News To Explore
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3">
           {posts.map((item, index) => (

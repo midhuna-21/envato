@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaPencilAlt } from "react-icons/fa";
+import { FaCalendarAlt, FaPencilAlt, FaUser } from "react-icons/fa";
 
 export default function PostGrid({ data }) {
   return (
@@ -33,29 +33,35 @@ export default function PostGrid({ data }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {data.map((item) => (
             <div key={item.slug} className="text-center">
-              <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.slug}>
-              <div className="relative group cursor-pointer">
-                <div className="relative w-full h-[250px] overflow-hidden border border-gray-200 shadow-sm">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
-                  />
+              <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.title}>
+                <div className="relative group cursor-pointer">
+                  <div className="relative w-full h-[250px] overflow-hidden border border-gray-200 shadow-sm">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#2f2f2f] text-white text-sm tracking-wide px-3 py-1 shadow-md border border-gray-300">
+                    <span className="mx-1">♦</span>
+                    {item.category}
+                    <span className="mx-1">♦</span>
+                  </div>
                 </div>
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#2f2f2f] text-white text-sm tracking-wide px-3 py-1 shadow-md border border-gray-300">
-                  <span className="mx-1">♦</span>
-                  {item.category}
-                  <span className="mx-1">♦</span>
-                </div>
-              </div>
               </Link>
               <h2
                 className="mt-5 text-[22px] line-clamp-1 md:line-clamp-2 md:text-[26px] font-light text-[#2f2f2f] leading-tight"
               >
                 {item.title}
               </h2>
-              <div className="mt-1 mb-1 text-[#3f3f3f] font-normal text-[12px] flex justify-center items-center gap-3">
+              <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
+                <FaUser className="text-gray-600" />
+                <span>{item.author.name}</span>
+
+                <span className="mx-2">|</span>
+
+                <FaCalendarAlt className="text-gray-600" />
                 <span>{item.date}</span>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AuthorsWidget() {
   const authors = [
     "/demo/a1.jpg",
@@ -21,12 +23,14 @@ export default function AuthorsWidget() {
       {/* Author Grid */}
       <div className="grid grid-cols-3 gap-2 bg-[#f3f3f3] p-3 border border-gray-300 shadow-sm">
         {authors.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt="Author"
-            className="w-full h-24 object-cover"
-          />
+       <div key={i} className="relative w-full h-24">
+            <Image
+              src={src}
+              alt="Author"
+              fill
+              className="object-cover"
+            />
+          </div>
         ))}
       </div>
 

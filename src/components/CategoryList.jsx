@@ -17,7 +17,7 @@ export default function CategoryList() {
       {categories.map((item, index) => {
         const width = item.label.length * 6; 
         return (
-          <Link key={item.slug} href={`/${item.slug}`}>
+          <Link key={item.slug} href={`/${item.slug}`} title={item.title}>
             <div className="text-center cursor-pointer hover:opacity-70 transition">
               <div className="text-sm text-gray-400 tracking-widest mb-1">
                 — {index + 1} —

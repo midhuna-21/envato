@@ -110,8 +110,7 @@ const article = {
         }
 };
 
-console.log(article,'article julio page')
-export default function ClientPage() {
+export default function ClientPage({otherArticles}) {
   return (
     <div>
       <Breadcrumb category={article.category} title={article.title} />
@@ -122,7 +121,7 @@ export default function ClientPage() {
           description={article.shortdescription || ""}
         />
 
-        <PillerArticle article={article} />
+        <PillerArticle article={article} otherArticles={otherArticles}/>
       </div>
     </div>
   );

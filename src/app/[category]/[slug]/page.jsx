@@ -14,33 +14,33 @@ import ClientPage from '../../../components/ClientPage';
 import Script from "next/script";
 
 export async function generateStaticParams() {
-    const allData = [
-        { category: 'world', articles: worldData },
-        { category: 'us', articles: usData },
-        { category: 'business', articles: businessData },
-        { category: 'politics', articles: politicsData },
-        { category: 'finance', articles: financeData },
-        { category: 'sports', articles: sportsData },
-        { category: 'entertainment', articles: entertainmentData },
-    ];
+  const allData = [
+    { category: 'world', articles: worldData },
+    { category: 'us', articles: usData },
+    { category: 'business', articles: businessData },
+    { category: 'politics', articles: politicsData },
+    { category: 'finance', articles: financeData },
+    { category: 'sports', articles: sportsData },
+    { category: 'entertainment', articles: entertainmentData },
+  ];
 
-    return allData.flatMap(({ category, articles }) =>
-        articles.map((article) => ({
-            category,
-            slug: article.slug,
-        }))
-    );
+  return allData.flatMap(({ category, articles }) =>
+    articles.map((article) => ({
+      category,
+      slug: article.slug,
+    }))
+  );
 }
 
 
 const allData = {
-    business: businessData,
-    world: worldData,
-    sports: sportsData,
-    us: usData,
-    politics: politicsData,
-    finance: financeData,
-    entertainment: entertainmentData,
+  business: businessData,
+  world: worldData,
+  sports: sportsData,
+  us: usData,
+  politics: politicsData,
+  finance: financeData,
+  entertainment: entertainmentData,
 };
 
 
@@ -174,58 +174,100 @@ export async function generateMetadata({ params }) {
 
 export default async function DetailPage({ params }) {
 
-    const { category, slug } = await params;
-    const data = allData[category?.toLowerCase()];
+  const { category, slug } = await params;
+  const data = allData[category?.toLowerCase()];
 
-    if (!data) return notFound();
+  if (!data) return notFound();
 
-    const article = data.find(item => item.slug === slug);
-    if (!article) {
-        return <div className="p-4">No article found for slug {slug}</div>;
-    }
+  const article = data.find(item => item.slug === slug);
+  if (!article) {
+    return <div className="p-4">No article found for slug {slug}</div>;
+  }
 
-    const otherArticles = data.filter(item => item.slug !== slug);
+  const otherArticles = data.filter(item => item.slug !== slug);
 
-    if (slug == 'enduring-influence-traditional-banking-families') {
-        return (
-            <main>
-                      <Script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "NewsArticle",
-                "headline": "When Lawyers Switch Sides on Their Own Client: The $15 Million Lesson of Bancrédito",
-                "description": "Bancrédito, a small Puerto Rican bank, faced a $15 million penalty for willfully failing to report suspicious transactions despite earlier legal assurances. This case highlights the costly consequences of compliance failures and legal misadvice.",
-                "datePublished": "2025-09-17T08:09:05-04:00",
-                "dateModified": "2025-09-17T08:09:05-04:00",
-                "author": {
-                  "@type": "Organization",
-                  "name": "Editorial Board"
-                },
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "Conservative Business Journal",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.tangentweekly.com/images/tangent-logo.webp"
-                  }
-                },
-                "mainEntityOfPage": "https://www.tangentweekly.com/business/lawyers-switch-sides-bancredito-15-million-lesson/",
-                "wordCount": "2300",
-                "image": "https://www.tangentweekly.com/images/bancredito-15-million-lawyers-switch.webp"
-              }),
-            }}/>
-                <ClientPage />
-            </main>
-        )
-    }
+  if (slug == 'enduring-influence-traditional-banking-families') {
     return (
-        <main>
-            <Breadcrumb category={article.category} title={article.title} />
-            <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y-6 mb-22">
-                <DetailTitle title={article.category} description={article.shortdescription} />
-                <Article article={article} otherArticles={otherArticles} />
-            </div>
-        </main>
-    );
+      <main>
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "NewsArticle",
+
+              "headline": "The Enduring Influence of Traditional Banking Families",
+              "description":
+                "Traditional banking families remain influential even in today’s digital and decentralised era, preserving historical trust, discipline, and long-standing financial relationships. Their legacy continues to shape global economic stability and governance.",
+
+              "articleSection": "business",
+
+              "datePublished": "2025-12-08T00:00:00+05:30",
+              "dateModified": "2025-12-08T00:00:00+05:30",
+
+              "author": {
+                "@type": "Person",
+                "name": "Marcus Bennett",
+                "jobTitle": "Political Correspondent",
+                "description":
+                  "Marcus covers U.S. politics and policy with sharp, accessible reporting. He breaks down political developments so readers understand what they mean in real life.",
+                "image": "https://www.fiscalfusion.org/images/marcus-bennett.webp",
+                "email": "marcusbennett@fiscalfusion.org",
+                "sameAs": [
+                  "https://www.facebook.com/profile.php?id=61584651071329",
+                  "https://www.instagram.com/marcusbennett2025/",
+                  "https://substack.com/@marcusbennett2",
+                  "https://medium.com/@marcusbennett_21499"
+                ]
+              },
+
+              "publisher": {
+                "@type": "Organization",
+                "name": "Fiscal Fusion",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.fiscalfusion.org/images/fiscalfusion-logo.webp",
+                  "width": 600,
+                  "height": 600
+                }
+              },
+
+              "mainEntityOfPage":
+                "https://www.fiscalfusion.org/business/enduring-influence-traditional-banking-families",
+
+              "image": {
+                "@type": "ImageObject",
+                "url":
+                  "https://www.fiscalfusion.org/images/julio-herrera-velutini-banking-legacy.webp",
+                "width": 1200,
+                "height": 630
+              },
+
+              "keywords": [
+                "Traditional Banking Families",
+                "Finance",
+                "Global Banking",
+                "Economic History",
+                "Fiscal Fusion"
+              ],
+
+              "articleBody":
+                "The significance of traditional banking families, in the present era of digital finance and decentralised banking, is a stark reminder of how financial transactions were done in the past..."
+            }),
+          }}
+        />
+
+        <ClientPage otherArticles={otherArticles} />
+      </main>
+    )
+  }
+  return (
+    <main>
+      <Breadcrumb category={article.category} title={article.title} />
+      <div className="w-full px-4 sm:px-2 lg:px-4 xl:px-12 space-y- mb-10">
+        <DetailTitle title={article.category} description={article.shortdescription} />
+        <Article article={article} otherArticles={otherArticles} />
+      </div>
+    </main>
+  );
 }

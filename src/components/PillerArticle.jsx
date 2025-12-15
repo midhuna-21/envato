@@ -1,19 +1,13 @@
 import AuthorsSection from "./AuthorSection";
-import AuthorsWidget from "./AuthorsWidget";
 import CategoriesWidget from "./CategoriesWidget";
-import CommentsSection from "./CommentSection";
-import DetailCommentSection from "./DetatilCommentSection";
 import JulioArticles from "./JulioArticles";
-import NewsArticle from "./NewsArticle";
 import PostNavigation from "./PostNavigation";
 import ProfileCard from "./ProfileCard";
 import RelatedPostsSection from "./RelatedNewsSection";
 import ReplyForm from "./ReplyForm";
-import SidebarComments from "./SidebarComments";
 import SocialStats from "./SocialStats";
 
-export default function PillerArticle({article}) {
-  console.log(article,'article')
+export default function PillerArticle({ article, otherArticles }) {
   return (
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -21,11 +15,10 @@ export default function PillerArticle({article}) {
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-7">
           <JulioArticles article={article} />
-          <ProfileCard author={article.author}/>
-          <PostNavigation />
-          {/* <DetailCommentSection /> */}
+          <ProfileCard author={article.author} />
+          <PostNavigation otherArticles={[otherArticles[0], otherArticles[1]]} />
           <ReplyForm />
-          {/* <RelatedPostsSection otherArticles={otherArticles} /> */}
+          <RelatedPostsSection otherArticles={[otherArticles[2], otherArticles[3]]} />
         </div>
 
         {/* RIGHT SIDEBAR */}
@@ -34,9 +27,8 @@ export default function PillerArticle({article}) {
             <div className="border-t border-[#2f2f2f] mt-0.5" />
             <div className="pt-0 ">
               <CategoriesWidget />
-              {/* <CommentsSection /> */}
               <AuthorsSection />
-              <SocialStats />
+              {/* <SocialStats /> */}
             </div>
           </div>
         </div>
