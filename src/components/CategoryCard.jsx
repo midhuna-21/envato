@@ -115,7 +115,7 @@ export default function CategoryCard({ item }) {
              font-serif font-normal tracking-widest hover:bg-[#171616]
              cursor-pointer"
         >
-          read more
+          Continue
         </Link>
 
       </div>

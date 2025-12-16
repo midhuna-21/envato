@@ -77,7 +77,7 @@ export default function HeroSection({ data }) {
           >
             <span className="absolute inset-0 border md:border-[2px] border-white group-hover:border-[#2f2f2f] pointer-events-none"></span>
             <span className="relative group-hover:text-[#2f2f2f]">
-              Read more
+              Read article
             </span>
           </Link>
 

@@ -5,7 +5,6 @@ import usData from "../../../public/data/us.json";
 import politicsData from "../../../public/data/politics.json";
 import worldData from "../../../public/data/world.json";
 import entertainmentData from "../../../public/data/entertainment.json";
-import CategoryCard from "../../components/CategoryCard";
 import PaginatedGrid from "../../components/PaginatedGrid";
 import Breadcrumb from "../../components/BreadCrump";
 import SectionTitle from "../../components/SectionTitle";

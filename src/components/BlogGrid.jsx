@@ -47,7 +47,7 @@ const BlogCard = ({ image, category, title, date, slug, description, name }) => 
         <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug} aria-label={`Read full article: ${title}`}>
           <div className="my-2 flex justify-center">
             <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
-              Read More →
+             More details →
             </span>
           </div>
         </Link>
