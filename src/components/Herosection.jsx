@@ -26,6 +26,7 @@ export default function HeroSection({ data }) {
             alt={item.title}
             fill
             className="object-cover"
+            priority
           />
         </div>
       ))}
@@ -69,8 +70,8 @@ export default function HeroSection({ data }) {
             href={`/${currentSlide.category}/${currentSlide.slug}`}
             title={`Read full article: ${currentSlide.title}`}
             aria-label={`Read full article: ${currentSlide.title}`}
-            className="cursor-pointer relative group text-[6px] md:text-[13px]
-             px-2 py-0.5 md:px-4 md:py-1 font-bold text-gray-200
+            className="cursor-pointer relative group text-[8px] md:text-[13px]
+             px-2 py-1 md:px-4 md:py-2 font-bold text-gray-200
              bg-[#2f2f2f] border-[1px] md:border-[4px] border-[#2f2f2f]
              hover:bg-white hover:border-white transition-all duration-300
              md:mb-10 mb-3 inline-block"
@@ -86,7 +87,7 @@ export default function HeroSection({ data }) {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`md:w-3 md:h-3 w-1 h-1 border border-white rotate-45 transition ${current === i ? "bg-white" : "bg-transparent"
+                className={`w-3 h-3 border border-white rotate-45 transition ${current === i ? "bg-white" : "bg-transparent"
                   }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

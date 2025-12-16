@@ -19,10 +19,14 @@ export default function MainNav() {
       <div className="md:hidden w-full bg-[#EEEDE3] flex items-center justify-between px-2 py-1 fixed top-[36px] left-0 z-[9999]">
         <span className="text-[#2f2f2f] font-serif text-[15px]">Menu</span>
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="w-9 h-9 bg-[#2f2f2f] border border-[#c1c0b4] flex items-center justify-center"
-        >
+     <button
+  onClick={() => setOpen(!open)}
+  aria-label={open ? "Close menu" : "Open menu"}
+  aria-expanded={open}
+  aria-controls="mobile-menu"
+  className="w-9 h-9 bg-[#2f2f2f] border border-[#c1c0b4] flex items-center justify-center"
+>
+
           <div className="flex flex-col gap-[3px]">
             <span className="block w-5 h-[2px] bg-[#c1c0b4]"></span>
             <span className="block w-5 h-[2px] bg-[#c1c0b4]"></span>
@@ -92,7 +96,7 @@ export default function MainNav() {
                   key={index}
                   className="flex justify-between items-center border-b border-[#4a4a4a] pb-2"
                 >
-                  <Link href={item.href} aria-label={label} onClick={() => setOpen(false)}>
+                  <Link href={item.href} aria-label={item.label} onClick={() => setOpen(false)}>
                     <span>
                       {String(index + 1).padStart(2, "0")}.{" "}
                       <span className="text-white">{item.label}</span>

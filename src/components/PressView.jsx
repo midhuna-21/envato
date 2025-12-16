@@ -29,8 +29,12 @@ export default function PressViewHeader() {
       <div className="md:hidden flex justify-center mb-3">
         <button
           onClick={() => setOpen(!open)}
+          aria-label={open ? "Hide categories" : "Show categories"}
+          aria-expanded={open}
+          aria-controls="mobile-category-menu"
           className="transition"
         >
+
           <svg
             width="26"
             height="26"
