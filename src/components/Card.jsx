@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaUser, FaCalendarAlt} from "react-icons/fa";
+import { FaUser, FaCalendarAlt } from "react-icons/fa";
 
 const Card = ({ category, slug, title, description, name, date }) => {
   return (
@@ -13,7 +13,6 @@ const Card = ({ category, slug, title, description, name, date }) => {
        
       "
     >
-
       <div className="relative w-full flex items-center justify-center md:mb-6 mb-4 ">
         <div className="absolute inset-0 flex flex-col justify-center">
           <div className="w-full border-t-2 border-[#2f2f2f] " />
@@ -34,11 +33,11 @@ const Card = ({ category, slug, title, description, name, date }) => {
         </span>
       </div>
       <div className="flex flex-col items-center px-2 flex-grow">
-        <h2
+        <h3
           className="text-[26px] font-normal text-[#2f2f2f] leading-[1.1] tracking-tight line-clamp-1 md:line-clamp-2 md:mb-3 mb-2"
         >
           {title}
-        </h2>
+        </h3>
         <p
           className="
             text-gray-600 leading-[1.3] tracking-tight text-[13px] font-serif
@@ -49,26 +48,26 @@ const Card = ({ category, slug, title, description, name, date }) => {
         >
           {description}
         </p>
-          <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
-                               <FaUser className="text-gray-600" />
-                               <span>{name}</span>
-                     
-                               <span className="mx-2">|</span>
-                     
-                               <FaCalendarAlt className="text-gray-600" />
+        <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
+          <FaUser className="text-gray-600" />
+          <span>{name}</span>
 
-                               <span>{date}</span>
-                             </div>
+          <span className="mx-2">|</span>
+
+          <FaCalendarAlt className="text-gray-600" />
+
+          <span>{date}</span>
+        </div>
         <div className="w-full flex flex-col items-center cursor-pointer">
           <div className="w-full">
             <div className="border-t-2 border-[#2f2f2f]" />
             <div className="border-t border-[#2f2f2f] mt-0.5" />
           </div>
 
-          <Link href={`/${category}/${slug}`} className="text-decoration-none" title={slug}>
+          <Link href={`/${category}/${slug}`} className="text-decoration-none" title={title} aria-label={`Read full article: ${title}`}>
             <div className="my-2 flex justify-center">
               <span className="text-[#2f2f2f] font-semibold font-serif text-[14px] tracking-wide">
-                Read More →
+                Continue reading →
               </span>
             </div>
           </Link>
@@ -87,8 +86,6 @@ const Card = ({ category, slug, title, description, name, date }) => {
 export default function ThreeCardsSection({ data }) {
   return (
     <div className="w-full flex flex-col items-center px-4 md:px-10">
-
-      {/* Heading */}
       <div className="w-full py-7 md:py-10 text-center ">
         <h2
           className="
@@ -97,16 +94,12 @@ export default function ThreeCardsSection({ data }) {
             w-[220px] mx-auto md:w-auto md:mx-0
           "
         >
-        Latest Updates
+          Latest Updates
         </h2>
       </div>
-
-      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3  gap-18 md:gap-0">
         {data.slice(0, 3).map((item, index) => (
-
           <div key={index} className="relative px-0.5">
-
             <Card
               category={item.category}
               score={item.score}
@@ -117,12 +110,8 @@ export default function ThreeCardsSection({ data }) {
               date={item.date}
             />
           </div>
-
         ))}
       </div>
-
-
-      {/* Navigation Buttons */}
       <div className="flex items-center gap-3 mt-17 md:mt-0">
         <div className="relative md:w-8 md:h-8 w-5 h-5 flex items-center justify-center rotate-45">
           <div className="absolute inset-0 border-2 border-[#2f2f2f]" />

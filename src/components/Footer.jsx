@@ -11,7 +11,7 @@ export default function Footer() {
 
           <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-12 text-center ">
             <div>
-              <h3 className="text-2xl font-semibold tracking-wide mb-2">ABOUT US</h3>
+              <span className="text-2xl font-semibold tracking-wide mb-2">ABOUT US</span>
               <div className="w-12 h-[2px] bg-[#c1c0b4] mx-auto mb-6"></div>
               <p className="text-sm leading-[1.3] tracking-tight mb-3 font-serif">
                 Fiscal Fusion brings you accurate, timely, and engaging news from around the world, keeping you informed and connected to the stories that matter most.   </p>
@@ -22,7 +22,7 @@ export default function Footer() {
 
             {/* LATEST NEWS */}
             <div>
-              <h3 className="text-2xl font-semibold tracking-wide mb-2">LATEST NEWS</h3>
+              <span className="text-2xl font-semibold tracking-wide mb-2">LATEST NEWS</span>
               <div className="w-12 h-[2px] bg-[#c1c0b4] mx-auto mb-6"></div>
 
               {[
@@ -30,7 +30,7 @@ export default function Footer() {
               ].map((item, i) => (
                 <div key={i} className="mb-3 font-serif">
                   <p className="font-medium text-sm">{item.date}</p>
-                  <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none hover:underline" title={item.slug}>
+                  <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none hover:underline" aria-label={item.title} title={item.title}>
                     <p className="text-sm mt-1 leading-[1.3] tracking-tight">{item.title}</p>
                   </Link>
                   {i !== 1 && (
@@ -49,16 +49,16 @@ export default function Footer() {
         <div className='border-t-2 border-[#7c7c79] mt-0.5 p-3'>
           <div className="text-center text-[8px] md:text-[10px] text-[#c1c0b4] mb-3">
             <div className="flex justify-center flex-wrap gap-2 md:gap-4 lowercase font-serif">
-              <Link href="/about" title='about' className="hover:underline uppercase">about</Link>
-              <Link href="/contact" title='contact' className="hover:underline uppercase">contact</Link>
-              <Link href="/editorial-policy" title='editorial-policy' className="hover:underline uppercase">editorial policy</Link>
-              <Link href="/correction-policy" title='correction-policy' className="hover:underline uppercase">correction policy</Link>
-              <Link href="/our-team" title='our-team' className="hover:underline uppercase">our team</Link>
-              <Link href="/faq" title='faq' className="hover:underline uppercase">faq</Link>
-              <Link href="/terms-and-conditions" title='terms-and-conditions' className="hover:underline uppercase">Terms and conditions</Link>
+              <Link href="/about" title='about' aria-label="about" className="hover:underline uppercase">about</Link>
+              <Link href="/contact" title='contact' aria-label="contact" className="hover:underline uppercase">contact</Link>
+              <Link href="/editorial-policy" title='editorial-policy' aria-label="editorial-policy" className="hover:underline uppercase">editorial policy</Link>
+              <Link href="/correction-policy" title='correction-policy' aria-label="correction-policy" className="hover:underline uppercase">correction policy</Link>
+              <Link href="/our-team" title='our-team' aria-label="our-team" className="hover:underline uppercase">our team</Link>
+              <Link href="/faq" title='faq' aria-label="faq" className="hover:underline uppercase">faq</Link>
+              <Link href="/terms-and-conditions" title='terms-and-conditions' aria-label="terms-and-conditions" className="hover:underline uppercase">Terms and conditions</Link>
             </div>
           </div>
-         <p className='text-[8px] md:text-[10px]'>Copyright © 2025. All rights reserved.</p> 
+          <p className='text-[8px] md:text-[10px]'>Copyright © 2025. All rights reserved.</p>
         </div>
       </div>
     </footer>

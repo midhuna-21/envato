@@ -15,9 +15,9 @@ export default function JulioArticles({ article }) {
         />
       </div>
 
-      <h1 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal hover:underline max-w-[750px] mt-6 leading-[1.1] tracking-tight">
+      <h3 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal hover:underline max-w-[750px] mt-6 leading-[1.1] tracking-tight">
         {article.title}
-      </h1>
+      </h3>
 
       <div className="text-[#2f2f2f] mt-2 space-x-3 font-serif text-[12px] flex flex-wrap justify-center items-center">
         <FaUser className="text-[#333] text-[14px]" />
@@ -32,10 +32,10 @@ export default function JulioArticles({ article }) {
           <div key={index} className="space-y-3">
             {/* Title */}
             {item.title && (
-              <h2 className="text-[18px] md:text-[22px] font-extrabold uppercase tracking-wide relative inline-block">
+              <h4 className="text-[18px] md:text-[22px] font-extrabold uppercase tracking-wide relative inline-block">
                 {item.title}
                 <span className="absolute left-0 -bottom-1 w-12 h-[2px] bg-[#2f2f2f] rounded"></span>
-              </h2>
+              </h4>
             )}
 
             {/* Paragraph */}

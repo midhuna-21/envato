@@ -15,7 +15,7 @@ export default function CategoryCard({ item }) {
     <div className="max-w-xl mx-auto bg-white text-[#333] border-t-2 border-[#2f2f2f]">
       <div className="border-t border-[#2f2f2f] mt-0.5" />
       <div className="pt-4 pb-5 p-2">
-        <Link href={`/${item.category}/${item.slug}`} title={item.title}>
+        <Link href={`/${item.category}/${item.slug}`} title={item.title} aria-label={item.title}>
           <div className="relative w-full h-[260px] border border-[#d7d7d7] overflow-hidden">
             <Image
               src={item.image}
@@ -28,9 +28,9 @@ export default function CategoryCard({ item }) {
         </Link>
 
 
-        <h2 className="text-[32px] font-light mt-2 mb-2 line-clamp-1 text-center">
+        <h3 className="text-[32px] font-light mt-2 mb-2 line-clamp-1 text-center">
           {item.title}
-        </h2>
+        </h3>
 
         <div className="flex items-center justify-center gap-1 text-[12px] text-gray-600 mb-3 ">
           <FaUser className="text-gray-600" />
@@ -52,7 +52,7 @@ export default function CategoryCard({ item }) {
 
         <div className="flex items-center gap-3 text-[14px] text-[#2f2f2f]">
           <span className="font-normal font-serif">SHARE ON:</span>
-            {/* <Link
+          {/* <Link
             href={article.author.twitter}
             target="_blank"
             rel="noopener noreferrer"
@@ -61,53 +61,63 @@ export default function CategoryCard({ item }) {
 
           <FaTwitter className="cursor-pointer" />
           </Link> */}
-            <Link
+          <Link
             title="facebook"
             href={item.author.facebook}
             target="_blank"
+            aria-label="facebook"
             rel="noopener noreferrer"
             className="no-underline"
           >
 
-          <FaFacebookF className="cursor-pointer" />
+            <FaFacebookF className="cursor-pointer" />
           </Link>
-            <Link
+          <Link
             title="instagram"
             href={item.author.instagram}
             target="_blank"
+            aria-label="instagram"
             rel="noopener noreferrer"
             className="no-underline"
           >
 
-          <FaInstagram className="cursor-pointer" />
+            <FaInstagram className="cursor-pointer" />
           </Link>
-            <Link
+          <Link
             title="medium"
             href={item.author.medium}
             target="_blank"
+            aria-label="medium"
             rel="noopener noreferrer"
             className="no-underline"
           >
 
-          <FaMedium className="cursor-pointer"/>
+            <FaMedium className="cursor-pointer" />
           </Link>
-            <Link
+          <Link
             title="substack"
             href={item.author.substack}
             target="_blank"
+            aria-label="substack"
             rel="noopener noreferrer"
             className="no-underline"
           >
 
-          <SubstackIconBlack className="cursor-pointer" />
+            <SubstackIconBlack className="cursor-pointer" />
           </Link>
         </div>
 
-        <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.slug}>
-          <button className="bg-[#333] text-white px-3 py-2 text-[14px] font-serif font-normal tracking-widest hover:bg-[#171616] cursor-pointer">
-            read more
-          </button>
+        <Link
+          href={`/${item.category}/${item.slug}`}
+          title={`Read full article: ${item.title}`}
+          aria-label={`Read full article: ${item.title}`}
+          className="inline-block bg-[#333] text-white px-3 py-2 text-[14px]
+             font-serif font-normal tracking-widest hover:bg-[#171616]
+             cursor-pointer"
+        >
+          read more
         </Link>
+
       </div>
       <div className="border  mt-0.5 mb-8"></div>
     </div>

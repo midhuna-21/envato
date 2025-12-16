@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function TermsPage() {
@@ -52,12 +53,14 @@ export default function TermsPage() {
       content: (
         <>
           For questions regarding these Terms & Conditions, email us at:{" "}
-          <a
+          <Link
+            title="mail"
+            aria-label="mail"
             href="mailto:team@fiscalfusion.org"
             className="underline text-gray-900 hover:text-black transition"
           >
             team@fiscalfusion.org
-          </a>
+          </Link>
         </>
       )
     }
@@ -66,18 +69,16 @@ export default function TermsPage() {
 
   return (
     <div className="min-h-screen">
-      {/* HEADER */}
       <div className="mx-auto p-5 md:p-10 border-b border-gray-200 text-center">
-        <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+        <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
           Terms & Conditions
-        </h1>
+        </h2>
         <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif max-w-2xl mx-auto">
           Please read our terms carefully. By accessing Fiscal Fusion, you agree to follow the guidelines and policies
           outlined below.
         </p>
       </div>
 
-      {/* CONTENT SECTIONS */}
       <div className="max-w-5xl mx-auto px-6 md:py-10 py-5">
         <div className="flex flex-col gap-6">
           {sections.map((section, idx) => (

@@ -23,7 +23,7 @@ export default function ReplyForm() {
     <>
       <div className="w-full border-t-2 border-b-2 border-[#2f2f2f]">
         <div className="border-t border-b border-[#2f2f2f] mt-0.5 mb-0.5 py-6">
-          <h2 className="text-[32px] font-normal mb-3">Leave a reply</h2>
+          <span className="text-[32px] font-normal mb-3">Leave a reply</span>
 
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

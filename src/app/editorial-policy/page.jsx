@@ -38,48 +38,38 @@ export default function EditorialPolicyPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* HEADER */}
       <section className="p-5 md:p-10  border-b border-gray-200">
         <div className="max-w-3xl mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
-             Editorial Policy
-          </h1>
-            <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
-            Fiscal Fusion maintains the highest standards of journalism. Our editorial 
-            policy ensures that every article we publish is accurate, transparent, 
+          <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+            Editorial Policy
+          </h2>
+          <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+            Fiscal Fusion maintains the highest standards of journalism. Our editorial
+            policy ensures that every article we publish is accurate, transparent,
             and ethical.
           </p>
         </div>
       </section>
-
-      {/* POLICY SECTIONS */}
-   {/* POLICY SECTIONS - Improved Design */}
-<section className="max-w-5xl mx-auto px-6 md:py-12 py-6 space-y-7">
-  {sections.map((section, idx) => {
-    const Icon = section.icon;
-    return (
-      <div key={idx} className="flex flex-col md:flex-row items-start gap-6 md:gap-8 bg-[#f9f9f9] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-        
-        {/* ICON */}
-        <div className="flex-shrink-0 bg-[#2f2f2f] text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
-          <Icon className="w-6 h-6 md:w-7 md:h-7" />
-        </div>
-
-        {/* CONTENT */}
-        <div className="flex-grow">
-          <h2 className="text-xl md:text-2xl font-semibold text-[#2f2f2f] mb-2">
-            {section.title}
-          </h2>
-          <p className=" text-[#4a4a4a] text-[11px] md:text-[15px] leading-[1.3] tracking-tight font-serif">
-            {section.content}
-          </p>
-
-         
-        </div>
-      </div>
-    );
-  })}
-</section>
+      <section className="max-w-5xl mx-auto px-6 md:py-12 py-6 space-y-7">
+        {sections.map((section, idx) => {
+          const Icon = section.icon;
+          return (
+            <div key={idx} className="flex flex-col md:flex-row items-start gap-6 md:gap-8 bg-[#f9f9f9] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 bg-[#2f2f2f] text-white rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                <Icon className="w-6 h-6 md:w-7 md:h-7" />
+              </div>
+              <div className="flex-grow">
+                <h3 className="text-xl md:text-2xl font-semibold text-[#2f2f2f] mb-2">
+                  {section.title}
+                </h3>
+                <p className=" text-[#4a4a4a] text-[11px] md:text-[15px] leading-[1.3] tracking-tight font-serif">
+                  {section.content}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </section>
 
 
       {/* PRINCIPLES GRID */}

@@ -33,7 +33,7 @@ export default function PostGrid({ data }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {data.map((item) => (
             <div key={item.slug} className="text-center">
-              <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.title}>
+              <Link href={`/${item.category}/${item.slug}`} className="text-decoration-none" title={item.title} aria-label={item.title}>
                 <div className="relative group cursor-pointer">
                   <div className="relative w-full h-[250px] overflow-hidden border border-gray-200 shadow-sm">
                     <Image
@@ -50,11 +50,11 @@ export default function PostGrid({ data }) {
                   </div>
                 </div>
               </Link>
-              <h2
+              <h3
                 className="mt-5 text-[22px] line-clamp-1 md:line-clamp-2 md:text-[26px] font-light text-[#2f2f2f] leading-tight"
               >
                 {item.title}
-              </h2>
+              </h3>
               <div className="flex items-center justify-center gap-1 text-[8px] text-gray-600 mb-3 ">
                 <FaUser className="text-gray-600" />
                 <span>{item.author.name}</span>

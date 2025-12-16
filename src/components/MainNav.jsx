@@ -41,35 +41,33 @@ export default function MainNav() {
           md:top-[50px]
         "
       >
-        {/* DESKTOP NAV */}
         <div className="max-w-[1891px] mx-auto px-10 py-1 hidden md:flex items-center justify-between">
 
           <ul className="flex items-center text-[#C1C0B4] text-[13px] tracking-wide gap-4 font-serif">
             <li>
-              <Link href="/" title="home" className="hover:text-white transition">
+              <Link href="/" title="home" aria-label="home" className="hover:text-white transition">
                 Home
               </Link>
             </li>
             <li>*</li>
             <li>
-              <Link href="/about" title="about" className="hover:text-white transition">
+              <Link href="/about" title="about" aria-label="about" className="hover:text-white transition">
                 About
               </Link>
             </li>
             <li>*</li>
             <li>
-              <Link href="/contact" title="contact" className="hover:text-white transition">
+              <Link href="/contact" title="contact" aria-label="contact" className="hover:text-white transition">
                 Contact
               </Link>
             </li>
           </ul>
 
           <div className="flex items-center gap-5">
-
-
             <div className="relative">
               <input
                 type="text"
+                aria-label="Search"
                 className="bg-[#6b6b6b] text-white w-[170px] h-[25px] px-3 pr-10 placeholder-gray-300 focus:outline-none"
               />
               <FaSearch
@@ -94,7 +92,7 @@ export default function MainNav() {
                   key={index}
                   className="flex justify-between items-center border-b border-[#4a4a4a] pb-2"
                 >
-                  <Link href={item.href} onClick={() => setOpen(false)}>
+                  <Link href={item.href} aria-label={label} onClick={() => setOpen(false)}>
                     <span>
                       {String(index + 1).padStart(2, "0")}.{" "}
                       <span className="text-white">{item.label}</span>

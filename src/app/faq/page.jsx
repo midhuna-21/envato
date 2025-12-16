@@ -35,7 +35,7 @@ export default function FaqSection() {
       answer: (
         <>
           You can reach out to our editorial team anytime through our{" "}
-          <Link title="contact" href="/contact" className="text-blue-600 underline">
+          <Link title="contact" href="/contact" aria-label="contact" className="text-blue-600 underline">
             Contact Page
           </Link>
           .
@@ -53,61 +53,41 @@ export default function FaqSection() {
   };
 
   return (
- <div className="max-h-[900px] mx-auto h-full">
+    <div className="max-h-[900px] mx-auto h-full">
+      <section className="p-5 md:p-10  border-b border-gray-200">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
+            FAQ
+          </h2>
+          <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
+            Your guide to how Fiscal Fusion reports, verifies, and publishes the news — clearly explained in one place.
 
-
-  {/* HERO SECTION */}
-        <section className="p-5 md:p-10  border-b border-gray-200">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-1 md:mb-3 text-[#2f2f2f]">
-               FAQ
-            </h1>
-            <p className="text-[11px] md:text-[15px] text-[#2f2f2f] leading-[1.3] tracking-tight font-serif">
-        Your guide to how Fiscal Fusion reports, verifies, and publishes the news — clearly explained in one place.
-        
-            </p>
-          </div>
-        </section>
-    
-
-      {/* FAQ LIST */}
+          </p>
+        </div>
+      </section>
       <section className="max-w-3xl mx-auto px-6 mt-10 md:mt-12">
-
         {faqs.map((item, i) => (
           <div
             key={i}
             onClick={() => toggleFAQ(i)}
             className="mb-8 md:mb-10 cursor-pointer select-none"
           >
-
-            {/* TOP LINE */}
             <div className="h-[1.3px] bg-gray-700 w-full"></div>
-
-            {/* DIAMOND */}
             <div className="-mt-2 flex justify-center">
               <div className="w-3 h-3 bg-gray-800 rotate-45"></div>
             </div>
-
-            {/* QUESTION */}
-            <h2 className="text-[15px] md:text-[18px] font-medium mt-1 text-[#2f2f2f] tracking-tight">
+            <h3 className="text-[15px] md:text-[18px] font-medium mt-1 text-[#2f2f2f] tracking-tight">
               {item.question}
-            </h2>
-
-            {/* BOTTOM LINE */}
+            </h3>
             <div className="mt-2 h-[1.3px] bg-gray-700 w-full"></div>
-
-            {/* ANSWER */}
             {openIndex === i && (
               <p className="text-[#2f2f2f] font-serif text-[11px] md:text-[15px] leading-[1.3] tracking-tight mt-3">
                 {item.answer}
               </p>
             )}
-
           </div>
         ))}
-
       </section>
-
     </div>
   );
 }

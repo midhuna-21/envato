@@ -173,17 +173,14 @@ export async function generateMetadata({ params }) {
 
 
 export default async function DetailPage({ params }) {
+  const { category, slug } = params;
 
-  const { category, slug } = await params;
-  const data = allData[category?.toLowerCase()];
-
-  if (!data) return notFound();
+  const data = allData[category];
+  if (!data) notFound();
 
   const article = data.find(item => item.slug === slug);
-  if (!article) {
-    return <div className="p-4">No article found for slug {slug}</div>;
-  }
-
+  if (!article) notFound();
+  
   const otherArticles = data.filter(item => item.slug !== slug);
 
   if (slug == 'enduring-influence-traditional-banking-families') {

@@ -37,9 +37,9 @@ export default function ProfileCard({ author }) {
 
         {/* Content */}
         <div className="flex flex-col justify-center text-center p-6 md:p-8">
-          <h2 className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal mb-2 md:mb-3">
+          <span className="text-2xl md:text-[32px] text-[#2f2f2f] font-normal mb-2 md:mb-3">
             {author.name}
-          </h2>
+          </span>
 
           <p className="text-[#2f2f2f] font-serif leading-[1.3] tracking-tight max-w-xl mx-auto text-[11px] md:text-[13px]">
             {author.bio}
@@ -60,9 +60,10 @@ export default function ProfileCard({ author }) {
                   key={i}
                   href={item.url}
                   target="_blank"
+                  aria-label="social-links"
                   rel="noopener noreferrer"
                   className="w-6 h-6 md:w-7 md:h-7 bg-[#c1c0b4] rotate-45 flex items-center justify-center"
-              >
+                >
                   <div className="-rotate-45 text-white text-[12px] md:text-base">
                     {item.icon}
                   </div>

@@ -13,9 +13,8 @@ export default function Section({ data }) {
           backgroundColor: "#e9e9e7",
         }}
       >
-
         <h2 className="text-center text-[42px] md:text-[45px] leading-[1.1] tracking-tight font-normal tracking-wide mb-10">
-      Trending Now
+          Trending Now
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
